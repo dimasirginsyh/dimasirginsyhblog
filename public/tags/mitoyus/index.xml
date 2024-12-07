@@ -2,17 +2,183 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mitoyus on Blog Dimas Irgiansyah</title>
-    <link>https://blog.dimasirgiansyah.my.id/tags/mitoyus/</link>
+    <link>http://localhost:1313/tags/mitoyus/</link>
     <description>Recent content in Mitoyus on Blog Dimas Irgiansyah</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 04 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.dimasirgiansyah.my.id/tags/mitoyus/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 07 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/mitoyus/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to deploy rust app to VPS</title>
+      <link>http://localhost:1313/posts/how-to-deploy-rust-app-to-vps/</link>
+      <pubDate>Sat, 07 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/how-to-deploy-rust-app-to-vps/</guid>
+      <description>&lt;p&gt;Deploying a Rust application to a VPS (Virtual Private Server) involves several key steps. Here’s a comprehensive guide on how to do it:&lt;/p&gt;
+&lt;h3 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Rust Toolchain&lt;/strong&gt; installed on your local machine (using &lt;code&gt;rustup&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;VPS Access&lt;/strong&gt;: SSH access to the VPS (for example, using SSH keys).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;VPS OS&lt;/strong&gt;: Linux-based OS (Ubuntu, Debian, CentOS, etc.) is assumed.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cargo&lt;/strong&gt; (Rust&amp;rsquo;s package manager and build tool) should be installed on the VPS.&lt;/li&gt;
+&lt;li&gt;A &lt;strong&gt;web server&lt;/strong&gt; (like Nginx or Apache) for serving HTTP applications (optional, only necessary for web apps).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;step-by-step-guide&#34;&gt;Step-by-Step Guide&lt;/h3&gt;
+&lt;h4 id=&#34;1-build-your-rust-application&#34;&gt;1. Build Your Rust Application&lt;/h4&gt;
+&lt;p&gt;First, build your Rust app for release on your local machine:&lt;/p&gt;</description>
+      <content>&lt;p&gt;Deploying a Rust application to a VPS (Virtual Private Server) involves several key steps. Here’s a comprehensive guide on how to do it:&lt;/p&gt;
+&lt;h3 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Rust Toolchain&lt;/strong&gt; installed on your local machine (using &lt;code&gt;rustup&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;VPS Access&lt;/strong&gt;: SSH access to the VPS (for example, using SSH keys).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;VPS OS&lt;/strong&gt;: Linux-based OS (Ubuntu, Debian, CentOS, etc.) is assumed.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cargo&lt;/strong&gt; (Rust&amp;rsquo;s package manager and build tool) should be installed on the VPS.&lt;/li&gt;
+&lt;li&gt;A &lt;strong&gt;web server&lt;/strong&gt; (like Nginx or Apache) for serving HTTP applications (optional, only necessary for web apps).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;step-by-step-guide&#34;&gt;Step-by-Step Guide&lt;/h3&gt;
+&lt;h4 id=&#34;1-build-your-rust-application&#34;&gt;1. Build Your Rust Application&lt;/h4&gt;
+&lt;p&gt;First, build your Rust app for release on your local machine:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cargo build --release
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This will create an optimized, production-ready build of your application in the &lt;code&gt;target/release&lt;/code&gt; directory.&lt;/p&gt;
+&lt;h4 id=&#34;2-set-up-your-vps&#34;&gt;2. Set Up Your VPS&lt;/h4&gt;
+&lt;p&gt;Make sure you have access to your VPS and can SSH into it. You’ll need to install some dependencies for Rust and your application.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;SSH into your VPS&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ssh user@your_vps_ip
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;3-install-rust-on-the-vps&#34;&gt;3. Install Rust on the VPS&lt;/h4&gt;
+&lt;p&gt;Install Rust on your VPS if it’s not already installed:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;curl --proto &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;=https&amp;#39;&lt;/span&gt; --tlsv1.2 -sSf https://sh.rustup.rs | sh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Once Rust is installed, make sure it’s available in your &lt;code&gt;$PATH&lt;/code&gt; by sourcing the Rust environment variables:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;source $HOME/.cargo/env
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;4-transfer-your-rust-application-to-the-vps&#34;&gt;4. Transfer Your Rust Application to the VPS&lt;/h4&gt;
+&lt;p&gt;There are multiple ways to transfer your application to your VPS. Here are two common approaches:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Using SCP (Secure Copy Protocol)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;From your local machine, run this command to transfer the compiled binary to your VPS:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;scp target/release/your_app user@your_vps_ip:/home/user/your_app
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Using Git&lt;/strong&gt; (if you use version control)&lt;/p&gt;
+&lt;p&gt;If you have your Rust application in a Git repository, you can clone it on your VPS:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git clone https://github.com/yourusername/your-repository.git
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd your-repository
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cargo build --release
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;5-install-dependencies-optional&#34;&gt;5. Install Dependencies (Optional)&lt;/h4&gt;
+&lt;p&gt;If your app has dependencies like a database or additional libraries, install them on the VPS. For example, if you’re using PostgreSQL, install it:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get update
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get install postgresql
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;6-run-the-application&#34;&gt;6. Run the Application&lt;/h4&gt;
+&lt;p&gt;Once your application is transferred to the VPS, run it:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./your_app
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If it’s a long-running service (like a web server or API), you might want to run it in the background.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Run in background using &lt;code&gt;nohup&lt;/code&gt;&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;nohup ./your_app &amp;amp;&amp;gt; app.log &amp;amp;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Using &lt;code&gt;systemd&lt;/code&gt; for automatic service management&lt;/strong&gt; (recommended for production)&lt;/p&gt;
+&lt;p&gt;Create a &lt;code&gt;systemd&lt;/code&gt; service file for managing your application.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo nano /etc/systemd/system/your_app.service
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Example &lt;code&gt;your_app.service&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-ini&#34; data-lang=&#34;ini&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;[Unit]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Description&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;Your Rust Application&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;After&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;network.target&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;[Service]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Type&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;simple&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;ExecStart&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;/home/user/your_app&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Restart&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;always&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;User&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;user&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;WorkingDirectory&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;/home/user&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;[Install]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;WantedBy&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;multi-user.target&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then reload &lt;code&gt;systemd&lt;/code&gt;, enable and start the service:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo systemctl daemon-reload
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo systemctl enable your_app
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo systemctl start your_app
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;7-configure-firewall-and-open-ports-optional&#34;&gt;7. Configure Firewall and Open Ports (Optional)&lt;/h4&gt;
+&lt;p&gt;If your app uses a specific port (for example, HTTP on port 8080), you’ll need to open that port in your VPS firewall:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo ufw allow 8080/tcp
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;8-set-up-reverse-proxy-optional-for-web-apps&#34;&gt;8. Set Up Reverse Proxy (Optional for Web Apps)&lt;/h4&gt;
+&lt;p&gt;If you are deploying a web app and want to serve it through a domain, you might want to use Nginx or Apache as a reverse proxy.&lt;/p&gt;
+&lt;p&gt;Example Nginx config:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo nano /etc/nginx/sites-available/your_app
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-nginx&#34; data-lang=&#34;nginx&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;server&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;listen&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;80&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;server_name&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;your-domain.com&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;location&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;/&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;proxy_pass&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;http://127.0.0.1:8080&lt;/span&gt;;  &lt;span style=&#34;color:#75715e&#34;&gt;# Assuming your app runs on port 8080
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;proxy_set_header&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;Host&lt;/span&gt; $host;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;proxy_set_header&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;X-Real-IP&lt;/span&gt; $remote_addr;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;proxy_set_header&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;X-Forwarded-For&lt;/span&gt; $proxy_add_x_forwarded_for;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Link it to &lt;code&gt;sites-enabled&lt;/code&gt; and restart Nginx:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo ln -s /etc/nginx/sites-available/your_app /etc/nginx/sites-enabled/
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo systemctl restart nginx
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;9-monitor-and-maintain-the-application&#34;&gt;9. Monitor and Maintain the Application&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Logs&lt;/strong&gt;: Use &lt;code&gt;journalctl&lt;/code&gt; to check the logs of your service:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;journalctl -u your_app.service
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Updates&lt;/strong&gt;: Update your Rust app by pulling the latest changes and recompiling it:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git pull
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cargo build --release
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Stop the app&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo systemctl stop your_app
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;After updating, restart it:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo systemctl start your_app
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;Deploying a Rust app to a VPS is straightforward, especially once you&amp;rsquo;ve compiled it for release. Ensure you handle things like service management with &lt;code&gt;systemd&lt;/code&gt;, security (firewall, SSH), and reverse proxies for web applications to ensure your app runs smoothly in a production environment.&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Pengalaman VPS menggunakan DEBIAN 12</title>
+      <link>http://localhost:1313/posts/pengalaman-vps-menggunakan-debian-12/</link>
+      <pubDate>Sat, 07 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/pengalaman-vps-menggunakan-debian-12/</guid>
+      <description>&lt;p&gt;DEBIAN adalah distro yang sungguh popular, tetapi kenapa banyak hal yang cukup berbeda dengan UBUNTU yang merupakan salah satunya. Berikut adalah beberapa hal yang cukup berbeda di DEBIAN 12&lt;/p&gt;
+&lt;h4 id=&#34;1-install-rust-yang-tidak-lancar&#34;&gt;1. Install rust yang tidak lancar&lt;/h4&gt;
+&lt;p&gt;Jika anda ingin menginstall rust, tidak cukup dengan perintah&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;curl --proto &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;=https&amp;#39;&lt;/span&gt; --tlsv1.2 -sSf https://sh.rustup.rs | sh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Anda juga harus menambahkan beberapa installasi yang harus dilakukan seperti&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt install build-essential pkg-config libudev-dev libpq-dev
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Setelah install itu semua, saya masih tidak bisa melakukan build release aplikasi rust saya.&lt;/p&gt;</description>
+      <content>&lt;p&gt;DEBIAN adalah distro yang sungguh popular, tetapi kenapa banyak hal yang cukup berbeda dengan UBUNTU yang merupakan salah satunya. Berikut adalah beberapa hal yang cukup berbeda di DEBIAN 12&lt;/p&gt;
+&lt;h4 id=&#34;1-install-rust-yang-tidak-lancar&#34;&gt;1. Install rust yang tidak lancar&lt;/h4&gt;
+&lt;p&gt;Jika anda ingin menginstall rust, tidak cukup dengan perintah&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;curl --proto &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;=https&amp;#39;&lt;/span&gt; --tlsv1.2 -sSf https://sh.rustup.rs | sh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Anda juga harus menambahkan beberapa installasi yang harus dilakukan seperti&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt install build-essential pkg-config libudev-dev libpq-dev
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Setelah install itu semua, saya masih tidak bisa melakukan build release aplikasi rust saya.&lt;/p&gt;
+</content>
+    </item>
+    
     <item>
       <title>Create a REST API with Rust and Connect to Telegram Bot</title>
-      <link>https://blog.dimasirgiansyah.my.id/posts/create-a-rest-api-with-rust-and-connect-to-telegram-bot/</link>
+      <link>http://localhost:1313/posts/create-a-rest-api-with-rust-and-connect-to-telegram-bot/</link>
       <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dimasirgiansyah.my.id/posts/create-a-rest-api-with-rust-and-connect-to-telegram-bot/</guid>
+      <guid>http://localhost:1313/posts/create-a-rest-api-with-rust-and-connect-to-telegram-bot/</guid>
       <description>&lt;p&gt;To create a REST API with Rust that allows you to send photos and videos to a Telegram bot, we can use the Actix Web framework for the API and the Teloxide library for interacting with the Telegram bot.&lt;/p&gt;
 &lt;h3 id=&#34;steps&#34;&gt;Steps:&lt;/h3&gt;
 &lt;ol&gt;
@@ -163,10 +329,10 @@
     
     <item>
       <title>Recommendation Structure Folder For Rust Apps</title>
-      <link>https://blog.dimasirgiansyah.my.id/posts/recommendation-structure-folder-for-rust-apps/</link>
+      <link>http://localhost:1313/posts/recommendation-structure-folder-for-rust-apps/</link>
       <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dimasirgiansyah.my.id/posts/recommendation-structure-folder-for-rust-apps/</guid>
+      <guid>http://localhost:1313/posts/recommendation-structure-folder-for-rust-apps/</guid>
       <description>&lt;p&gt;When organizing a Rust application, it&amp;rsquo;s important to follow a folder structure that is both maintainable and scalable. A well-organized folder structure makes it easier for developers to understand the code, contribute to the project, and scale the application as it grows. Below is a recommended structure for a typical Rust application, with explanations for each part.&lt;/p&gt;
 &lt;h3 id=&#34;recommended-folder-structure&#34;&gt;Recommended Folder Structure&lt;/h3&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;my_rust_app/
@@ -354,10 +520,10 @@
     
     <item>
       <title>Setting Subdomain Cloudflare for hugo website in github page</title>
-      <link>https://blog.dimasirgiansyah.my.id/posts/setting-subdomain-cloudflare-for-hugo-website-in-github-page/</link>
+      <link>http://localhost:1313/posts/setting-subdomain-cloudflare-for-hugo-website-in-github-page/</link>
       <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dimasirgiansyah.my.id/posts/setting-subdomain-cloudflare-for-hugo-website-in-github-page/</guid>
+      <guid>http://localhost:1313/posts/setting-subdomain-cloudflare-for-hugo-website-in-github-page/</guid>
       <description>&lt;p&gt;If you&amp;rsquo;re using the &lt;strong&gt;Hugo&lt;/strong&gt; framework to deploy your site on GitHub Pages and you&amp;rsquo;re experiencing issues with missing styles or incorrect layout after setting up a subdomain through Cloudflare, there are a few things to check and configure. Here&amp;rsquo;s a detailed guide to ensure that everything works smoothly.&lt;/p&gt;
 &lt;h3 id=&#34;1-check-the-baseurl-in-hugos-configuration&#34;&gt;1. &lt;strong&gt;Check the &lt;code&gt;baseURL&lt;/code&gt; in Hugo&amp;rsquo;s Configuration&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;The &lt;code&gt;baseURL&lt;/code&gt; setting in Hugo&amp;rsquo;s &lt;code&gt;config.toml&lt;/code&gt; (or &lt;code&gt;config.yaml&lt;/code&gt; or &lt;code&gt;config.json&lt;/code&gt;, depending on your setup) is critical for making sure your site works correctly with a custom subdomain or domain.&lt;/p&gt;</description>

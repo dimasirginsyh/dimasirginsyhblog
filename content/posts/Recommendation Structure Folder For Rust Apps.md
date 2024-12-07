@@ -7,6 +7,7 @@ tags:
   - mitoyus
   - blog
   - chatgpt
+  - english
 ---
 When organizing a Rust application, it's important to follow a folder structure that is both maintainable and scalable. A well-organized folder structure makes it easier for developers to understand the code, contribute to the project, and scale the application as it grows. Below is a recommended structure for a typical Rust application, with explanations for each part.
 

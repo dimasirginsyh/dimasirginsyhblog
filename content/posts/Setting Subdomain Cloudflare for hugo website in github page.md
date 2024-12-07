@@ -9,6 +9,7 @@ tags:
   - cloudflare
   - github
   - chatgpt
+  - english
 ---
 If you're using the **Hugo** framework to deploy your site on GitHub Pages and you're experiencing issues with missing styles or incorrect layout after setting up a subdomain through Cloudflare, there are a few things to check and configure. Here's a detailed guide to ensure that everything works smoothly.
 

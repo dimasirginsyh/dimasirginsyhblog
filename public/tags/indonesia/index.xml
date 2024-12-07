@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Indonesia on Blog Dimas Irgiansyah</title>
+    <link>http://localhost:1313/tags/indonesia/</link>
+    <description>Recent content in Indonesia on Blog Dimas Irgiansyah</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 07 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/indonesia/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pengalaman VPS menggunakan DEBIAN 12</title>
+      <link>http://localhost:1313/posts/pengalaman-vps-menggunakan-debian-12/</link>
+      <pubDate>Sat, 07 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/pengalaman-vps-menggunakan-debian-12/</guid>
+      <description>&lt;p&gt;DEBIAN adalah distro yang sungguh popular, tetapi kenapa banyak hal yang cukup berbeda dengan UBUNTU yang merupakan salah satunya. Berikut adalah beberapa hal yang cukup berbeda di DEBIAN 12&lt;/p&gt;
+&lt;h4 id=&#34;1-install-rust-yang-tidak-lancar&#34;&gt;1. Install rust yang tidak lancar&lt;/h4&gt;
+&lt;p&gt;Jika anda ingin menginstall rust, tidak cukup dengan perintah&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;curl --proto &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;=https&amp;#39;&lt;/span&gt; --tlsv1.2 -sSf https://sh.rustup.rs | sh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Anda juga harus menambahkan beberapa installasi yang harus dilakukan seperti&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt install build-essential pkg-config libudev-dev libpq-dev
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Setelah install itu semua, saya masih tidak bisa melakukan build release aplikasi rust saya.&lt;/p&gt;</description>
+      <content>&lt;p&gt;DEBIAN adalah distro yang sungguh popular, tetapi kenapa banyak hal yang cukup berbeda dengan UBUNTU yang merupakan salah satunya. Berikut adalah beberapa hal yang cukup berbeda di DEBIAN 12&lt;/p&gt;
+&lt;h4 id=&#34;1-install-rust-yang-tidak-lancar&#34;&gt;1. Install rust yang tidak lancar&lt;/h4&gt;
+&lt;p&gt;Jika anda ingin menginstall rust, tidak cukup dengan perintah&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;curl --proto &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;=https&amp;#39;&lt;/span&gt; --tlsv1.2 -sSf https://sh.rustup.rs | sh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Anda juga harus menambahkan beberapa installasi yang harus dilakukan seperti&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt install build-essential pkg-config libudev-dev libpq-dev
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Setelah install itu semua, saya masih tidak bisa melakukan build release aplikasi rust saya.&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

@@ -8,6 +8,7 @@ tags:
   - blog
   - telegram
   - chatgpt
+  - english
 ---
 To create a REST API with Rust that allows you to send photos and videos to a Telegram bot, we can use the Actix Web framework for the API and the Teloxide library for interacting with the Telegram bot.
 
