@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Indonesia on Blog Dimas Irgiansyah</title>
-    <link>http://localhost:1313/tags/indonesia/</link>
+    <link>https://blog.dimasirgiansyah.my.id/tags/indonesia/</link>
     <description>Recent content in Indonesia on Blog Dimas Irgiansyah</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 07 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/indonesia/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 07 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.dimasirgiansyah.my.id/tags/indonesia/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pengalaman VPS menggunakan DEBIAN 12</title>
-      <link>http://localhost:1313/posts/pengalaman-vps-menggunakan-debian-12/</link>
+      <link>https://blog.dimasirgiansyah.my.id/posts/pengalaman-vps-menggunakan-debian-12/</link>
       <pubDate>Sat, 07 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/pengalaman-vps-menggunakan-debian-12/</guid>
+      <guid>https://blog.dimasirgiansyah.my.id/posts/pengalaman-vps-menggunakan-debian-12/</guid>
       <description>&lt;p&gt;DEBIAN adalah distro yang sungguh popular, tetapi kenapa banyak hal yang cukup berbeda dengan UBUNTU yang merupakan salah satunya. Berikut adalah beberapa hal yang cukup berbeda di DEBIAN 12&lt;/p&gt;
 &lt;h4 id=&#34;1-install-rust-yang-tidak-lancar&#34;&gt;1. Install rust yang tidak lancar&lt;/h4&gt;
 &lt;p&gt;Jika anda ingin menginstall rust, tidak cukup dengan perintah&lt;/p&gt;

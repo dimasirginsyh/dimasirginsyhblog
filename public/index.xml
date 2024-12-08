@@ -2,17 +2,124 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog Dimas Irgiansyah</title>
-    <link>http://localhost:1313/</link>
+    <link>https://blog.dimasirgiansyah.my.id/</link>
     <description>Recent content on Blog Dimas Irgiansyah</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 07 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 08 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.dimasirgiansyah.my.id/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to completely uninstall NGINX</title>
+      <link>https://blog.dimasirgiansyah.my.id/posts/how-to-completely-uninstall-nginx/</link>
+      <pubDate>Sun, 08 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.dimasirgiansyah.my.id/posts/how-to-completely-uninstall-nginx/</guid>
+      <description>&lt;p&gt;To completely uninstall NGINX from your system, follow the appropriate instructions based on your operating system:&lt;/p&gt;
+&lt;h3 id=&#34;for-ubuntudebian-based-systems&#34;&gt;For Ubuntu/Debian-based systems:&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Stop the NGINX service&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo systemctl stop nginx
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Disable the NGINX service (so it doesn&amp;rsquo;t start on boot)&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo systemctl disable nginx
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Remove NGINX and its dependencies&lt;/strong&gt;: Run the following command to remove the NGINX package:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get purge nginx nginx-common nginx-full nginx-core
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Remove any unused dependencies&lt;/strong&gt;: After removing NGINX, you can clean up any unused packages:&lt;/p&gt;</description>
+      <content>&lt;p&gt;To completely uninstall NGINX from your system, follow the appropriate instructions based on your operating system:&lt;/p&gt;
+&lt;h3 id=&#34;for-ubuntudebian-based-systems&#34;&gt;For Ubuntu/Debian-based systems:&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Stop the NGINX service&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo systemctl stop nginx
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Disable the NGINX service (so it doesn&amp;rsquo;t start on boot)&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo systemctl disable nginx
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Remove NGINX and its dependencies&lt;/strong&gt;: Run the following command to remove the NGINX package:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get purge nginx nginx-common nginx-full nginx-core
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Remove any unused dependencies&lt;/strong&gt;: After removing NGINX, you can clean up any unused packages:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get autoremove
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Delete configuration and log files (optional)&lt;/strong&gt;: If you want to remove all configuration and log files (warning: this deletes custom configurations), use:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo rm -rf /etc/nginx /var/log/nginx /var/cache/nginx
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Check if NGINX is completely removed&lt;/strong&gt;: You can check if NGINX is still installed by typing:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;which nginx
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If nothing is returned, NGINX is successfully uninstalled.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;for-centosrhel-based-systems&#34;&gt;For CentOS/RHEL-based systems:&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Stop the NGINX service&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo systemctl stop nginx
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Disable NGINX from starting at boot&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo systemctl disable nginx
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Remove the NGINX package&lt;/strong&gt;: Run the following command to remove NGINX:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo yum remove nginx
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Clean up unused dependencies&lt;/strong&gt;: You can remove unused dependencies with:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo yum autoremove
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Remove configuration and log files (optional)&lt;/strong&gt;: If you want to remove the configuration files and logs, use:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo rm -rf /etc/nginx /var/log/nginx /var/cache/nginx
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Verify removal&lt;/strong&gt;: To confirm NGINX is uninstalled, check:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;which nginx
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If nothing is returned, it means NGINX is successfully uninstalled.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;for-arch-linux&#34;&gt;For Arch Linux:&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Stop the NGINX service&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo systemctl stop nginx
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Disable the NGINX service&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo systemctl disable nginx
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Uninstall NGINX&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo pacman -Rns nginx
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Remove configuration and log files (optional)&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo rm -rf /etc/nginx /var/log/nginx /var/cache/nginx
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Verify the removal&lt;/strong&gt;: Check that NGINX is removed by:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;which nginx
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;By following these steps, you will have completely uninstalled NGINX from your system.&lt;/p&gt;
+</content>
+    </item>
+    
     <item>
       <title>How to deploy rust app to VPS</title>
-      <link>http://localhost:1313/posts/how-to-deploy-rust-app-to-vps/</link>
+      <link>https://blog.dimasirgiansyah.my.id/posts/how-to-deploy-rust-app-to-vps/</link>
       <pubDate>Sat, 07 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/how-to-deploy-rust-app-to-vps/</guid>
+      <guid>https://blog.dimasirgiansyah.my.id/posts/how-to-deploy-rust-app-to-vps/</guid>
       <description>&lt;p&gt;Deploying a Rust application to a VPS (Virtual Private Server) involves several key steps. Here’s a comprehensive guide on how to do it:&lt;/p&gt;
 &lt;h3 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h3&gt;
 &lt;ol&gt;
@@ -152,10 +259,10 @@
     
     <item>
       <title>Pengalaman VPS menggunakan DEBIAN 12</title>
-      <link>http://localhost:1313/posts/pengalaman-vps-menggunakan-debian-12/</link>
+      <link>https://blog.dimasirgiansyah.my.id/posts/pengalaman-vps-menggunakan-debian-12/</link>
       <pubDate>Sat, 07 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/pengalaman-vps-menggunakan-debian-12/</guid>
+      <guid>https://blog.dimasirgiansyah.my.id/posts/pengalaman-vps-menggunakan-debian-12/</guid>
       <description>&lt;p&gt;DEBIAN adalah distro yang sungguh popular, tetapi kenapa banyak hal yang cukup berbeda dengan UBUNTU yang merupakan salah satunya. Berikut adalah beberapa hal yang cukup berbeda di DEBIAN 12&lt;/p&gt;
 &lt;h4 id=&#34;1-install-rust-yang-tidak-lancar&#34;&gt;1. Install rust yang tidak lancar&lt;/h4&gt;
 &lt;p&gt;Jika anda ingin menginstall rust, tidak cukup dengan perintah&lt;/p&gt;
@@ -175,10 +282,10 @@
     
     <item>
       <title>Create a REST API with Rust and Connect to Telegram Bot</title>
-      <link>http://localhost:1313/posts/create-a-rest-api-with-rust-and-connect-to-telegram-bot/</link>
+      <link>https://blog.dimasirgiansyah.my.id/posts/create-a-rest-api-with-rust-and-connect-to-telegram-bot/</link>
       <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/create-a-rest-api-with-rust-and-connect-to-telegram-bot/</guid>
+      <guid>https://blog.dimasirgiansyah.my.id/posts/create-a-rest-api-with-rust-and-connect-to-telegram-bot/</guid>
       <description>&lt;p&gt;To create a REST API with Rust that allows you to send photos and videos to a Telegram bot, we can use the Actix Web framework for the API and the Teloxide library for interacting with the Telegram bot.&lt;/p&gt;
 &lt;h3 id=&#34;steps&#34;&gt;Steps:&lt;/h3&gt;
 &lt;ol&gt;
@@ -329,10 +436,10 @@
     
     <item>
       <title>Recommendation Structure Folder For Rust Apps</title>
-      <link>http://localhost:1313/posts/recommendation-structure-folder-for-rust-apps/</link>
+      <link>https://blog.dimasirgiansyah.my.id/posts/recommendation-structure-folder-for-rust-apps/</link>
       <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/recommendation-structure-folder-for-rust-apps/</guid>
+      <guid>https://blog.dimasirgiansyah.my.id/posts/recommendation-structure-folder-for-rust-apps/</guid>
       <description>&lt;p&gt;When organizing a Rust application, it&amp;rsquo;s important to follow a folder structure that is both maintainable and scalable. A well-organized folder structure makes it easier for developers to understand the code, contribute to the project, and scale the application as it grows. Below is a recommended structure for a typical Rust application, with explanations for each part.&lt;/p&gt;
 &lt;h3 id=&#34;recommended-folder-structure&#34;&gt;Recommended Folder Structure&lt;/h3&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;my_rust_app/
@@ -520,10 +627,10 @@
     
     <item>
       <title>Setting Subdomain Cloudflare for hugo website in github page</title>
-      <link>http://localhost:1313/posts/setting-subdomain-cloudflare-for-hugo-website-in-github-page/</link>
+      <link>https://blog.dimasirgiansyah.my.id/posts/setting-subdomain-cloudflare-for-hugo-website-in-github-page/</link>
       <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/setting-subdomain-cloudflare-for-hugo-website-in-github-page/</guid>
+      <guid>https://blog.dimasirgiansyah.my.id/posts/setting-subdomain-cloudflare-for-hugo-website-in-github-page/</guid>
       <description>&lt;p&gt;If you&amp;rsquo;re using the &lt;strong&gt;Hugo&lt;/strong&gt; framework to deploy your site on GitHub Pages and you&amp;rsquo;re experiencing issues with missing styles or incorrect layout after setting up a subdomain through Cloudflare, there are a few things to check and configure. Here&amp;rsquo;s a detailed guide to ensure that everything works smoothly.&lt;/p&gt;
 &lt;h3 id=&#34;1-check-the-baseurl-in-hugos-configuration&#34;&gt;1. &lt;strong&gt;Check the &lt;code&gt;baseURL&lt;/code&gt; in Hugo&amp;rsquo;s Configuration&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;The &lt;code&gt;baseURL&lt;/code&gt; setting in Hugo&amp;rsquo;s &lt;code&gt;config.toml&lt;/code&gt; (or &lt;code&gt;config.yaml&lt;/code&gt; or &lt;code&gt;config.json&lt;/code&gt;, depending on your setup) is critical for making sure your site works correctly with a custom subdomain or domain.&lt;/p&gt;</description>
