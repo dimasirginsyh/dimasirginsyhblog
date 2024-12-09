@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Blog Dimas Irgiansyah</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>https://blog.dimasirgiansyah.my.id/posts/</link>
     <description>Recent content in Posts on Blog Dimas Irgiansyah</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 09 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 09 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.dimasirgiansyah.my.id/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Contoh File Dari Rekomendasi Folder Python FastAPI Project</title>
-      <link>http://localhost:1313/posts/contoh-file-dari-rekomendasi-folder-python-fastapi-project/</link>
+      <link>https://blog.dimasirgiansyah.my.id/posts/contoh-file-dari-rekomendasi-folder-python-fastapi-project/</link>
       <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/contoh-file-dari-rekomendasi-folder-python-fastapi-project/</guid>
+      <guid>https://blog.dimasirgiansyah.my.id/posts/contoh-file-dari-rekomendasi-folder-python-fastapi-project/</guid>
       <description>&lt;p&gt;Tentu! Berikut adalah contoh lengkap untuk setiap file dan folder dalam struktur folder FastAPI yang telah saya jelaskan sebelumnya. Saya akan memberikan contoh kode untuk setiap file utama, termasuk contoh &lt;code&gt;main.py&lt;/code&gt;, API endpoints, model, schema, dan sebagainya. Ini akan memberikan gambaran lebih jelas tentang bagaimana mengorganisasi aplikasi FastAPI yang skalabel.&lt;/p&gt;
 &lt;h3 id=&#34;1-my_fastapi_projectappmainpy&#34;&gt;1. &lt;strong&gt;&lt;code&gt;my_fastapi_project/app/main.py&lt;/code&gt;&lt;/strong&gt;&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; fastapi &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; FastAPI
@@ -476,10 +476,10 @@ python-dotenv
     
     <item>
       <title>Jika Kamu Bingung Kok Ada File __init__.py tapi gak ada dicontoh, ini solusinya</title>
-      <link>http://localhost:1313/posts/jika-kamu-bingung-kok-ada-file-__init__.py-tapi-gak-ada-dicontoh-ini-solusinya/</link>
+      <link>https://blog.dimasirgiansyah.my.id/posts/jika-kamu-bingung-kok-ada-file-__init__.py-tapi-gak-ada-dicontoh-ini-solusinya/</link>
       <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/jika-kamu-bingung-kok-ada-file-__init__.py-tapi-gak-ada-dicontoh-ini-solusinya/</guid>
+      <guid>https://blog.dimasirgiansyah.my.id/posts/jika-kamu-bingung-kok-ada-file-__init__.py-tapi-gak-ada-dicontoh-ini-solusinya/</guid>
       <description>&lt;p&gt;Berikut adalah contoh isi dari file &lt;code&gt;__init__.py&lt;/code&gt; yang perlu dimasukkan dalam setiap folder untuk memastikan folder tersebut diperlakukan sebagai paket Python (module), dan memungkinkan Anda untuk mengimpor modul-modul dalam folder tersebut.&lt;/p&gt;
 &lt;h3 id=&#34;1-my_fastapi_projectapp__init__py&#34;&gt;1. &lt;strong&gt;&lt;code&gt;my_fastapi_project/app/__init__.py&lt;/code&gt;&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;File ini akan menginisialisasi folder &lt;code&gt;app&lt;/code&gt; sebagai paket. Biasanya file ini kosong, tetapi kadang bisa berisi pengaturan atau import global.&lt;/p&gt;
@@ -562,10 +562,10 @@ python-dotenv
     
     <item>
       <title>Recommendation Structure Folder For a Python FastAPI Projects</title>
-      <link>http://localhost:1313/posts/recommendation-structure-folder-for-a-python-fastapi-projects/</link>
+      <link>https://blog.dimasirgiansyah.my.id/posts/recommendation-structure-folder-for-a-python-fastapi-projects/</link>
       <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/recommendation-structure-folder-for-a-python-fastapi-projects/</guid>
+      <guid>https://blog.dimasirgiansyah.my.id/posts/recommendation-structure-folder-for-a-python-fastapi-projects/</guid>
       <description>&lt;p&gt;When structuring a folder for a &lt;strong&gt;Python FastAPI&lt;/strong&gt; project, it&amp;rsquo;s essential to maintain modularity and scalability, especially as your project grows. A good folder structure helps to separate concerns, making it easier to manage and maintain the codebase.&lt;/p&gt;
 &lt;p&gt;Here&amp;rsquo;s a recommended folder structure for a typical FastAPI project:&lt;/p&gt;
 &lt;h3 id=&#34;recommended-folder-structure&#34;&gt;Recommended Folder Structure&lt;/h3&gt;
@@ -754,10 +754,10 @@ python-dotenv
     
     <item>
       <title>How to completely uninstall NGINX</title>
-      <link>http://localhost:1313/posts/how-to-completely-uninstall-nginx/</link>
+      <link>https://blog.dimasirgiansyah.my.id/posts/how-to-completely-uninstall-nginx/</link>
       <pubDate>Sun, 08 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/how-to-completely-uninstall-nginx/</guid>
+      <guid>https://blog.dimasirgiansyah.my.id/posts/how-to-completely-uninstall-nginx/</guid>
       <description>&lt;p&gt;To completely uninstall NGINX from your system, follow the appropriate instructions based on your operating system:&lt;/p&gt;
 &lt;h3 id=&#34;for-ubuntudebian-based-systems&#34;&gt;For Ubuntu/Debian-based systems:&lt;/h3&gt;
 &lt;ol&gt;
@@ -861,10 +861,10 @@ python-dotenv
     
     <item>
       <title>How to deploy rust app to VPS</title>
-      <link>http://localhost:1313/posts/how-to-deploy-rust-app-to-vps/</link>
+      <link>https://blog.dimasirgiansyah.my.id/posts/how-to-deploy-rust-app-to-vps/</link>
       <pubDate>Sat, 07 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/how-to-deploy-rust-app-to-vps/</guid>
+      <guid>https://blog.dimasirgiansyah.my.id/posts/how-to-deploy-rust-app-to-vps/</guid>
       <description>&lt;p&gt;Deploying a Rust application to a VPS (Virtual Private Server) involves several key steps. Here’s a comprehensive guide on how to do it:&lt;/p&gt;
 &lt;h3 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h3&gt;
 &lt;ol&gt;
@@ -1004,10 +1004,10 @@ python-dotenv
     
     <item>
       <title>Pengalaman VPS menggunakan DEBIAN 12</title>
-      <link>http://localhost:1313/posts/pengalaman-vps-menggunakan-debian-12/</link>
+      <link>https://blog.dimasirgiansyah.my.id/posts/pengalaman-vps-menggunakan-debian-12/</link>
       <pubDate>Sat, 07 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/pengalaman-vps-menggunakan-debian-12/</guid>
+      <guid>https://blog.dimasirgiansyah.my.id/posts/pengalaman-vps-menggunakan-debian-12/</guid>
       <description>&lt;p&gt;DEBIAN adalah distro yang sungguh popular, tetapi kenapa banyak hal yang cukup berbeda dengan UBUNTU yang merupakan salah satunya. Berikut adalah beberapa hal yang cukup berbeda di DEBIAN 12&lt;/p&gt;
 &lt;h4 id=&#34;1-install-rust-yang-tidak-lancar&#34;&gt;1. Install rust yang tidak lancar&lt;/h4&gt;
 &lt;p&gt;Jika anda ingin menginstall rust, tidak cukup dengan perintah&lt;/p&gt;
@@ -1027,10 +1027,10 @@ python-dotenv
     
     <item>
       <title>Create a REST API with Rust and Connect to Telegram Bot</title>
-      <link>http://localhost:1313/posts/create-a-rest-api-with-rust-and-connect-to-telegram-bot/</link>
+      <link>https://blog.dimasirgiansyah.my.id/posts/create-a-rest-api-with-rust-and-connect-to-telegram-bot/</link>
       <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/create-a-rest-api-with-rust-and-connect-to-telegram-bot/</guid>
+      <guid>https://blog.dimasirgiansyah.my.id/posts/create-a-rest-api-with-rust-and-connect-to-telegram-bot/</guid>
       <description>&lt;p&gt;To create a REST API with Rust that allows you to send photos and videos to a Telegram bot, we can use the Actix Web framework for the API and the Teloxide library for interacting with the Telegram bot.&lt;/p&gt;
 &lt;h3 id=&#34;steps&#34;&gt;Steps:&lt;/h3&gt;
 &lt;ol&gt;
@@ -1181,10 +1181,10 @@ python-dotenv
     
     <item>
       <title>Recommendation Structure Folder For Rust Apps</title>
-      <link>http://localhost:1313/posts/recommendation-structure-folder-for-rust-apps/</link>
+      <link>https://blog.dimasirgiansyah.my.id/posts/recommendation-structure-folder-for-rust-apps/</link>
       <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/recommendation-structure-folder-for-rust-apps/</guid>
+      <guid>https://blog.dimasirgiansyah.my.id/posts/recommendation-structure-folder-for-rust-apps/</guid>
       <description>&lt;p&gt;When organizing a Rust application, it&amp;rsquo;s important to follow a folder structure that is both maintainable and scalable. A well-organized folder structure makes it easier for developers to understand the code, contribute to the project, and scale the application as it grows. Below is a recommended structure for a typical Rust application, with explanations for each part.&lt;/p&gt;
 &lt;h3 id=&#34;recommended-folder-structure&#34;&gt;Recommended Folder Structure&lt;/h3&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;my_rust_app/
@@ -1372,10 +1372,10 @@ python-dotenv
     
     <item>
       <title>Setting Subdomain Cloudflare for hugo website in github page</title>
-      <link>http://localhost:1313/posts/setting-subdomain-cloudflare-for-hugo-website-in-github-page/</link>
+      <link>https://blog.dimasirgiansyah.my.id/posts/setting-subdomain-cloudflare-for-hugo-website-in-github-page/</link>
       <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/setting-subdomain-cloudflare-for-hugo-website-in-github-page/</guid>
+      <guid>https://blog.dimasirgiansyah.my.id/posts/setting-subdomain-cloudflare-for-hugo-website-in-github-page/</guid>
       <description>&lt;p&gt;If you&amp;rsquo;re using the &lt;strong&gt;Hugo&lt;/strong&gt; framework to deploy your site on GitHub Pages and you&amp;rsquo;re experiencing issues with missing styles or incorrect layout after setting up a subdomain through Cloudflare, there are a few things to check and configure. Here&amp;rsquo;s a detailed guide to ensure that everything works smoothly.&lt;/p&gt;
 &lt;h3 id=&#34;1-check-the-baseurl-in-hugos-configuration&#34;&gt;1. &lt;strong&gt;Check the &lt;code&gt;baseURL&lt;/code&gt; in Hugo&amp;rsquo;s Configuration&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;The &lt;code&gt;baseURL&lt;/code&gt; setting in Hugo&amp;rsquo;s &lt;code&gt;config.toml&lt;/code&gt; (or &lt;code&gt;config.yaml&lt;/code&gt; or &lt;code&gt;config.json&lt;/code&gt;, depending on your setup) is critical for making sure your site works correctly with a custom subdomain or domain.&lt;/p&gt;</description>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rust on Blog Dimas Irgiansyah</title>
-    <link>http://localhost:1313/tags/rust/</link>
+    <link>https://blog.dimasirgiansyah.my.id/tags/rust/</link>
     <description>Recent content in Rust on Blog Dimas Irgiansyah</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 07 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/rust/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 07 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.dimasirgiansyah.my.id/tags/rust/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to deploy rust app to VPS</title>
-      <link>http://localhost:1313/posts/how-to-deploy-rust-app-to-vps/</link>
+      <link>https://blog.dimasirgiansyah.my.id/posts/how-to-deploy-rust-app-to-vps/</link>
       <pubDate>Sat, 07 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/how-to-deploy-rust-app-to-vps/</guid>
+      <guid>https://blog.dimasirgiansyah.my.id/posts/how-to-deploy-rust-app-to-vps/</guid>
       <description>&lt;p&gt;Deploying a Rust application to a VPS (Virtual Private Server) involves several key steps. Here’s a comprehensive guide on how to do it:&lt;/p&gt;
 &lt;h3 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h3&gt;
 &lt;ol&gt;
@@ -152,10 +152,10 @@
     
     <item>
       <title>Pengalaman VPS menggunakan DEBIAN 12</title>
-      <link>http://localhost:1313/posts/pengalaman-vps-menggunakan-debian-12/</link>
+      <link>https://blog.dimasirgiansyah.my.id/posts/pengalaman-vps-menggunakan-debian-12/</link>
       <pubDate>Sat, 07 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/pengalaman-vps-menggunakan-debian-12/</guid>
+      <guid>https://blog.dimasirgiansyah.my.id/posts/pengalaman-vps-menggunakan-debian-12/</guid>
       <description>&lt;p&gt;DEBIAN adalah distro yang sungguh popular, tetapi kenapa banyak hal yang cukup berbeda dengan UBUNTU yang merupakan salah satunya. Berikut adalah beberapa hal yang cukup berbeda di DEBIAN 12&lt;/p&gt;
 &lt;h4 id=&#34;1-install-rust-yang-tidak-lancar&#34;&gt;1. Install rust yang tidak lancar&lt;/h4&gt;
 &lt;p&gt;Jika anda ingin menginstall rust, tidak cukup dengan perintah&lt;/p&gt;
@@ -175,10 +175,10 @@
     
     <item>
       <title>Create a REST API with Rust and Connect to Telegram Bot</title>
-      <link>http://localhost:1313/posts/create-a-rest-api-with-rust-and-connect-to-telegram-bot/</link>
+      <link>https://blog.dimasirgiansyah.my.id/posts/create-a-rest-api-with-rust-and-connect-to-telegram-bot/</link>
       <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/create-a-rest-api-with-rust-and-connect-to-telegram-bot/</guid>
+      <guid>https://blog.dimasirgiansyah.my.id/posts/create-a-rest-api-with-rust-and-connect-to-telegram-bot/</guid>
       <description>&lt;p&gt;To create a REST API with Rust that allows you to send photos and videos to a Telegram bot, we can use the Actix Web framework for the API and the Teloxide library for interacting with the Telegram bot.&lt;/p&gt;
 &lt;h3 id=&#34;steps&#34;&gt;Steps:&lt;/h3&gt;
 &lt;ol&gt;
@@ -329,10 +329,10 @@
     
     <item>
       <title>Recommendation Structure Folder For Rust Apps</title>
-      <link>http://localhost:1313/posts/recommendation-structure-folder-for-rust-apps/</link>
+      <link>https://blog.dimasirgiansyah.my.id/posts/recommendation-structure-folder-for-rust-apps/</link>
       <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/recommendation-structure-folder-for-rust-apps/</guid>
+      <guid>https://blog.dimasirgiansyah.my.id/posts/recommendation-structure-folder-for-rust-apps/</guid>
       <description>&lt;p&gt;When organizing a Rust application, it&amp;rsquo;s important to follow a folder structure that is both maintainable and scalable. A well-organized folder structure makes it easier for developers to understand the code, contribute to the project, and scale the application as it grows. Below is a recommended structure for a typical Rust application, with explanations for each part.&lt;/p&gt;
 &lt;h3 id=&#34;recommended-folder-structure&#34;&gt;Recommended Folder Structure&lt;/h3&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;my_rust_app/

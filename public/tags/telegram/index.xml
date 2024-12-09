@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Telegram on Blog Dimas Irgiansyah</title>
-    <link>http://localhost:1313/tags/telegram/</link>
+    <link>https://blog.dimasirgiansyah.my.id/tags/telegram/</link>
     <description>Recent content in Telegram on Blog Dimas Irgiansyah</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 04 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/telegram/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 04 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.dimasirgiansyah.my.id/tags/telegram/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Create a REST API with Rust and Connect to Telegram Bot</title>
-      <link>http://localhost:1313/posts/create-a-rest-api-with-rust-and-connect-to-telegram-bot/</link>
+      <link>https://blog.dimasirgiansyah.my.id/posts/create-a-rest-api-with-rust-and-connect-to-telegram-bot/</link>
       <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/create-a-rest-api-with-rust-and-connect-to-telegram-bot/</guid>
+      <guid>https://blog.dimasirgiansyah.my.id/posts/create-a-rest-api-with-rust-and-connect-to-telegram-bot/</guid>
       <description>&lt;p&gt;To create a REST API with Rust that allows you to send photos and videos to a Telegram bot, we can use the Actix Web framework for the API and the Teloxide library for interacting with the Telegram bot.&lt;/p&gt;
 &lt;h3 id=&#34;steps&#34;&gt;Steps:&lt;/h3&gt;
 &lt;ol&gt;
