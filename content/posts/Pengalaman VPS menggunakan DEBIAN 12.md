@@ -1,5 +1,6 @@
 ---
 title: Pengalaman VPS menggunakan DEBIAN 12
+author: Dimas Irgiansyah
 date: 2024-12-07
 draft: false
 tags:

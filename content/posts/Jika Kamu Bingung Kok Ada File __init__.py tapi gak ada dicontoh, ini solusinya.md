@@ -1,5 +1,6 @@
 ---
 title: Jika Kamu Bingung Kok Ada File __init__.py tapi gak ada dicontoh, ini solusinya
+author: Dimas Irgiansyah
 date: 2024-12-09
 draft: false
 tags:

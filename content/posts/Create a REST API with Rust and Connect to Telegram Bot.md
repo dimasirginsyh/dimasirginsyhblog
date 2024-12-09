@@ -1,5 +1,6 @@
 ---
 title: Create a REST API with Rust and Connect to Telegram Bot
+author: Dimas Irgiansyah
 date: 2024-12-04
 draft: false
 tags:

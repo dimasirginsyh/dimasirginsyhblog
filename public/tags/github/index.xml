@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Github on Blog Dimas Irgiansyah</title>
-    <link>https://blog.dimasirgiansyah.my.id/tags/github/</link>
+    <link>http://localhost:1313/tags/github/</link>
     <description>Recent content in Github on Blog Dimas Irgiansyah</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 04 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.dimasirgiansyah.my.id/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 04 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/github/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Setting Subdomain Cloudflare for hugo website in github page</title>
-      <link>https://blog.dimasirgiansyah.my.id/posts/setting-subdomain-cloudflare-for-hugo-website-in-github-page/</link>
+      <link>http://localhost:1313/posts/setting-subdomain-cloudflare-for-hugo-website-in-github-page/</link>
       <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dimasirgiansyah.my.id/posts/setting-subdomain-cloudflare-for-hugo-website-in-github-page/</guid>
+      <guid>http://localhost:1313/posts/setting-subdomain-cloudflare-for-hugo-website-in-github-page/</guid>
       <description>&lt;p&gt;If you&amp;rsquo;re using the &lt;strong&gt;Hugo&lt;/strong&gt; framework to deploy your site on GitHub Pages and you&amp;rsquo;re experiencing issues with missing styles or incorrect layout after setting up a subdomain through Cloudflare, there are a few things to check and configure. Here&amp;rsquo;s a detailed guide to ensure that everything works smoothly.&lt;/p&gt;
 &lt;h3 id=&#34;1-check-the-baseurl-in-hugos-configuration&#34;&gt;1. &lt;strong&gt;Check the &lt;code&gt;baseURL&lt;/code&gt; in Hugo&amp;rsquo;s Configuration&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;The &lt;code&gt;baseURL&lt;/code&gt; setting in Hugo&amp;rsquo;s &lt;code&gt;config.toml&lt;/code&gt; (or &lt;code&gt;config.yaml&lt;/code&gt; or &lt;code&gt;config.json&lt;/code&gt;, depending on your setup) is critical for making sure your site works correctly with a custom subdomain or domain.&lt;/p&gt;</description>

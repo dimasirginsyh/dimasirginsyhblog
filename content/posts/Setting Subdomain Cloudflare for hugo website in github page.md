@@ -1,5 +1,6 @@
 ---
 title: Setting Subdomain Cloudflare for hugo website in github page
+author: Dimas Irgiansyah
 date: 2024-12-04
 draft: false
 tags:

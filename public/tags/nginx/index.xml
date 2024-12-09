@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nginx on Blog Dimas Irgiansyah</title>
-    <link>https://blog.dimasirgiansyah.my.id/tags/nginx/</link>
+    <link>http://localhost:1313/tags/nginx/</link>
     <description>Recent content in Nginx on Blog Dimas Irgiansyah</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 08 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.dimasirgiansyah.my.id/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 08 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to completely uninstall NGINX</title>
-      <link>https://blog.dimasirgiansyah.my.id/posts/how-to-completely-uninstall-nginx/</link>
+      <link>http://localhost:1313/posts/how-to-completely-uninstall-nginx/</link>
       <pubDate>Sun, 08 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dimasirgiansyah.my.id/posts/how-to-completely-uninstall-nginx/</guid>
+      <guid>http://localhost:1313/posts/how-to-completely-uninstall-nginx/</guid>
       <description>&lt;p&gt;To completely uninstall NGINX from your system, follow the appropriate instructions based on your operating system:&lt;/p&gt;
 &lt;h3 id=&#34;for-ubuntudebian-based-systems&#34;&gt;For Ubuntu/Debian-based systems:&lt;/h3&gt;
 &lt;ol&gt;

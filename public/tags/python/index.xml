@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python on Blog Dimas Irgiansyah</title>
-    <link>https://blog.dimasirgiansyah.my.id/tags/python/</link>
+    <link>http://localhost:1313/tags/python/</link>
     <description>Recent content in Python on Blog Dimas Irgiansyah</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 09 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.dimasirgiansyah.my.id/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 09 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Contoh File Dari Rekomendasi Folder Python FastAPI Project</title>
-      <link>https://blog.dimasirgiansyah.my.id/posts/contoh-file-dari-rekomendasi-folder-python-fastapi-project/</link>
+      <link>http://localhost:1313/posts/contoh-file-dari-rekomendasi-folder-python-fastapi-project/</link>
       <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dimasirgiansyah.my.id/posts/contoh-file-dari-rekomendasi-folder-python-fastapi-project/</guid>
+      <guid>http://localhost:1313/posts/contoh-file-dari-rekomendasi-folder-python-fastapi-project/</guid>
       <description>&lt;p&gt;Tentu! Berikut adalah contoh lengkap untuk setiap file dan folder dalam struktur folder FastAPI yang telah saya jelaskan sebelumnya. Saya akan memberikan contoh kode untuk setiap file utama, termasuk contoh &lt;code&gt;main.py&lt;/code&gt;, API endpoints, model, schema, dan sebagainya. Ini akan memberikan gambaran lebih jelas tentang bagaimana mengorganisasi aplikasi FastAPI yang skalabel.&lt;/p&gt;
 &lt;h3 id=&#34;1-my_fastapi_projectappmainpy&#34;&gt;1. &lt;strong&gt;&lt;code&gt;my_fastapi_project/app/main.py&lt;/code&gt;&lt;/strong&gt;&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; fastapi &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; FastAPI
@@ -476,10 +476,10 @@ python-dotenv
     
     <item>
       <title>Jika Kamu Bingung Kok Ada File __init__.py tapi gak ada dicontoh, ini solusinya</title>
-      <link>https://blog.dimasirgiansyah.my.id/posts/jika-kamu-bingung-kok-ada-file-__init__.py-tapi-gak-ada-dicontoh-ini-solusinya/</link>
+      <link>http://localhost:1313/posts/jika-kamu-bingung-kok-ada-file-__init__.py-tapi-gak-ada-dicontoh-ini-solusinya/</link>
       <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dimasirgiansyah.my.id/posts/jika-kamu-bingung-kok-ada-file-__init__.py-tapi-gak-ada-dicontoh-ini-solusinya/</guid>
+      <guid>http://localhost:1313/posts/jika-kamu-bingung-kok-ada-file-__init__.py-tapi-gak-ada-dicontoh-ini-solusinya/</guid>
       <description>&lt;p&gt;Berikut adalah contoh isi dari file &lt;code&gt;__init__.py&lt;/code&gt; yang perlu dimasukkan dalam setiap folder untuk memastikan folder tersebut diperlakukan sebagai paket Python (module), dan memungkinkan Anda untuk mengimpor modul-modul dalam folder tersebut.&lt;/p&gt;
 &lt;h3 id=&#34;1-my_fastapi_projectapp__init__py&#34;&gt;1. &lt;strong&gt;&lt;code&gt;my_fastapi_project/app/__init__.py&lt;/code&gt;&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;File ini akan menginisialisasi folder &lt;code&gt;app&lt;/code&gt; sebagai paket. Biasanya file ini kosong, tetapi kadang bisa berisi pengaturan atau import global.&lt;/p&gt;
@@ -562,10 +562,10 @@ python-dotenv
     
     <item>
       <title>Recommendation Structure Folder For a Python FastAPI Projects</title>
-      <link>https://blog.dimasirgiansyah.my.id/posts/recommendation-structure-folder-for-a-python-fastapi-projects/</link>
+      <link>http://localhost:1313/posts/recommendation-structure-folder-for-a-python-fastapi-projects/</link>
       <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dimasirgiansyah.my.id/posts/recommendation-structure-folder-for-a-python-fastapi-projects/</guid>
+      <guid>http://localhost:1313/posts/recommendation-structure-folder-for-a-python-fastapi-projects/</guid>
       <description>&lt;p&gt;When structuring a folder for a &lt;strong&gt;Python FastAPI&lt;/strong&gt; project, it&amp;rsquo;s essential to maintain modularity and scalability, especially as your project grows. A good folder structure helps to separate concerns, making it easier to manage and maintain the codebase.&lt;/p&gt;
 &lt;p&gt;Here&amp;rsquo;s a recommended folder structure for a typical FastAPI project:&lt;/p&gt;
 &lt;h3 id=&#34;recommended-folder-structure&#34;&gt;Recommended Folder Structure&lt;/h3&gt;

@@ -1,5 +1,6 @@
 ---
 title: Recommendation Structure Folder For Rust Apps
+author: Dimas Irgiansyah
 date: 2024-12-04
 draft: false
 tags:

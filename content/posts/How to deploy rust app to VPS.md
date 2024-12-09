@@ -1,5 +1,6 @@
 ---
 title: How to deploy rust app to VPS
+author: Dimas Irgiansyah
 date: 2024-12-07
 draft: false
 tags:

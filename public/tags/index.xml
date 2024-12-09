@@ -2,147 +2,147 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Blog Dimas Irgiansyah</title>
-    <link>https://blog.dimasirgiansyah.my.id/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Blog Dimas Irgiansyah</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 09 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.dimasirgiansyah.my.id/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 09 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blog</title>
-      <link>https://blog.dimasirgiansyah.my.id/tags/blog/</link>
+      <link>http://localhost:1313/tags/blog/</link>
       <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dimasirgiansyah.my.id/tags/blog/</guid>
+      <guid>http://localhost:1313/tags/blog/</guid>
       <description></description>
       <content></content>
     </item>
     
     <item>
       <title>Chatgpt</title>
-      <link>https://blog.dimasirgiansyah.my.id/tags/chatgpt/</link>
+      <link>http://localhost:1313/tags/chatgpt/</link>
       <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dimasirgiansyah.my.id/tags/chatgpt/</guid>
+      <guid>http://localhost:1313/tags/chatgpt/</guid>
       <description></description>
       <content></content>
     </item>
     
     <item>
       <title>English</title>
-      <link>https://blog.dimasirgiansyah.my.id/tags/english/</link>
+      <link>http://localhost:1313/tags/english/</link>
       <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dimasirgiansyah.my.id/tags/english/</guid>
+      <guid>http://localhost:1313/tags/english/</guid>
       <description></description>
       <content></content>
     </item>
     
     <item>
       <title>Fastapi</title>
-      <link>https://blog.dimasirgiansyah.my.id/tags/fastapi/</link>
+      <link>http://localhost:1313/tags/fastapi/</link>
       <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dimasirgiansyah.my.id/tags/fastapi/</guid>
+      <guid>http://localhost:1313/tags/fastapi/</guid>
       <description></description>
       <content></content>
     </item>
     
     <item>
       <title>Indonesia</title>
-      <link>https://blog.dimasirgiansyah.my.id/tags/indonesia/</link>
+      <link>http://localhost:1313/tags/indonesia/</link>
       <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dimasirgiansyah.my.id/tags/indonesia/</guid>
+      <guid>http://localhost:1313/tags/indonesia/</guid>
       <description></description>
       <content></content>
     </item>
     
     <item>
       <title>Mitoyus</title>
-      <link>https://blog.dimasirgiansyah.my.id/tags/mitoyus/</link>
+      <link>http://localhost:1313/tags/mitoyus/</link>
       <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dimasirgiansyah.my.id/tags/mitoyus/</guid>
+      <guid>http://localhost:1313/tags/mitoyus/</guid>
       <description></description>
       <content></content>
     </item>
     
     <item>
       <title>Python</title>
-      <link>https://blog.dimasirgiansyah.my.id/tags/python/</link>
+      <link>http://localhost:1313/tags/python/</link>
       <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dimasirgiansyah.my.id/tags/python/</guid>
+      <guid>http://localhost:1313/tags/python/</guid>
       <description></description>
       <content></content>
     </item>
     
     <item>
       <title>Nginx</title>
-      <link>https://blog.dimasirgiansyah.my.id/tags/nginx/</link>
+      <link>http://localhost:1313/tags/nginx/</link>
       <pubDate>Sun, 08 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dimasirgiansyah.my.id/tags/nginx/</guid>
+      <guid>http://localhost:1313/tags/nginx/</guid>
       <description></description>
       <content></content>
     </item>
     
     <item>
       <title>Debian</title>
-      <link>https://blog.dimasirgiansyah.my.id/tags/debian/</link>
+      <link>http://localhost:1313/tags/debian/</link>
       <pubDate>Sat, 07 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dimasirgiansyah.my.id/tags/debian/</guid>
+      <guid>http://localhost:1313/tags/debian/</guid>
       <description></description>
       <content></content>
     </item>
     
     <item>
       <title>Rust</title>
-      <link>https://blog.dimasirgiansyah.my.id/tags/rust/</link>
+      <link>http://localhost:1313/tags/rust/</link>
       <pubDate>Sat, 07 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dimasirgiansyah.my.id/tags/rust/</guid>
+      <guid>http://localhost:1313/tags/rust/</guid>
       <description></description>
       <content></content>
     </item>
     
     <item>
       <title>Cloudflare</title>
-      <link>https://blog.dimasirgiansyah.my.id/tags/cloudflare/</link>
+      <link>http://localhost:1313/tags/cloudflare/</link>
       <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dimasirgiansyah.my.id/tags/cloudflare/</guid>
+      <guid>http://localhost:1313/tags/cloudflare/</guid>
       <description></description>
       <content></content>
     </item>
     
     <item>
       <title>Github</title>
-      <link>https://blog.dimasirgiansyah.my.id/tags/github/</link>
+      <link>http://localhost:1313/tags/github/</link>
       <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dimasirgiansyah.my.id/tags/github/</guid>
+      <guid>http://localhost:1313/tags/github/</guid>
       <description></description>
       <content></content>
     </item>
     
     <item>
       <title>Go</title>
-      <link>https://blog.dimasirgiansyah.my.id/tags/go/</link>
+      <link>http://localhost:1313/tags/go/</link>
       <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dimasirgiansyah.my.id/tags/go/</guid>
+      <guid>http://localhost:1313/tags/go/</guid>
       <description></description>
       <content></content>
     </item>
     
     <item>
       <title>Telegram</title>
-      <link>https://blog.dimasirgiansyah.my.id/tags/telegram/</link>
+      <link>http://localhost:1313/tags/telegram/</link>
       <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.dimasirgiansyah.my.id/tags/telegram/</guid>
+      <guid>http://localhost:1313/tags/telegram/</guid>
       <description></description>
       <content></content>
     </item>
