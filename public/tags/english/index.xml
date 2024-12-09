@@ -6,7 +6,199 @@
     <description>Recent content in English on Blog Dimas Irgiansyah</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 08 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.dimasirgiansyah.my.id/tags/english/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 09 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.dimasirgiansyah.my.id/tags/english/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Recommendation Structure Folder For a Python FastAPI Projects</title>
+      <link>https://blog.dimasirgiansyah.my.id/posts/recommendation-structure-folder-for-a-python-fastapi-projects/</link>
+      <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.dimasirgiansyah.my.id/posts/recommendation-structure-folder-for-a-python-fastapi-projects/</guid>
+      <description>&lt;p&gt;When structuring a folder for a &lt;strong&gt;Python FastAPI&lt;/strong&gt; project, it&amp;rsquo;s essential to maintain modularity and scalability, especially as your project grows. A good folder structure helps to separate concerns, making it easier to manage and maintain the codebase.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s a recommended folder structure for a typical FastAPI project:&lt;/p&gt;
+&lt;h3 id=&#34;recommended-folder-structure&#34;&gt;Recommended Folder Structure&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;my_fastapi_project/
+│
+├── app/                        # Main application code
+│   ├── __init__.py
+│   ├── main.py                 # Entry point for the FastAPI application
+│   ├── api/                    # API routes and business logic
+│   │   ├── __init__.py
+│   │   ├── v1/                 # Versioned API (optional, but good for future scalability)
+│   │   │   ├── __init__.py
+│   │   │   ├── endpoints/      # Routes for version 1 API
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── user.py     # Example: user-related routes
+│   │   │   │   ├── item.py     # Example: item-related routes
+│   │   ├── v2/                 # (Optional) Future version of the API
+│   │   ├── dependencies.py     # Shared dependencies (e.g., DB session)
+│   ├── core/                   # Core components like settings, config, security
+│   │   ├── __init__.py
+│   │   ├── config.py           # Configuration settings (e.g., environment variables)
+│   │   ├── security.py         # Security-related utilities (e.g., JWT)
+│   │   ├── settings.py         # Settings management (e.g., loading env variables)
+│   ├── models/                 # ORM models or Pydantic schemas
+│   │   ├── __init__.py
+│   │   ├── user.py             # Example: user model
+│   │   ├── item.py             # Example: item model
+│   ├── schemas/                # Pydantic schemas for validation
+│   │   ├── __init__.py
+│   │   ├── user.py             # Example: user schema
+│   │   ├── item.py             # Example: item schema
+│   ├── services/               # Business logic and service layer
+│   │   ├── __init__.py
+│   │   ├── user_service.py     # Example: user service
+│   │   ├── item_service.py     # Example: item service
+│   ├── db/                     # Database-related code (e.g., SQLAlchemy models, migrations)
+│   │   ├── __init__.py
+│   │   ├── session.py          # Database session management
+│   │   ├── init_db.py          # Database initialization code (e.g., creating tables)
+│   ├── tests/                  # Unit and integration tests
+│   │   ├── __init__.py
+│   │   ├── test_user.py        # Example test file for user-related functionality
+│   │   ├── test_item.py        # Example test file for item-related functionality
+│   ├── utils/                  # Utility functions that are used across the app
+│   │   ├── __init__.py
+│   │   ├── date_utils.py       # Example utility: date-related functions
+│
+├── .env                         # Environment variables for sensitive data (e.g., DB URI, API keys)
+├── .gitignore                   # Git ignore file to exclude unnecessary files
+├── requirements.txt             # Project dependencies (including FastAPI and Uvicorn)
+├── alembic.ini                  # Alembic configuration file (if using migrations with SQLAlchemy)
+├── Dockerfile                   # Dockerfile for containerizing the app (optional)
+├── docker-compose.yml           # Docker Compose file for multi-container setup (optional)
+└── README.md                    # Project documentation
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;explanation-of-the-structure&#34;&gt;Explanation of the Structure:&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;app/&lt;/code&gt;&lt;/strong&gt;: This is where the majority of your code resides. It contains all your app-specific logic and modules.&lt;/p&gt;</description>
+      <content>&lt;p&gt;When structuring a folder for a &lt;strong&gt;Python FastAPI&lt;/strong&gt; project, it&amp;rsquo;s essential to maintain modularity and scalability, especially as your project grows. A good folder structure helps to separate concerns, making it easier to manage and maintain the codebase.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s a recommended folder structure for a typical FastAPI project:&lt;/p&gt;
+&lt;h3 id=&#34;recommended-folder-structure&#34;&gt;Recommended Folder Structure&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;my_fastapi_project/
+│
+├── app/                        # Main application code
+│   ├── __init__.py
+│   ├── main.py                 # Entry point for the FastAPI application
+│   ├── api/                    # API routes and business logic
+│   │   ├── __init__.py
+│   │   ├── v1/                 # Versioned API (optional, but good for future scalability)
+│   │   │   ├── __init__.py
+│   │   │   ├── endpoints/      # Routes for version 1 API
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── user.py     # Example: user-related routes
+│   │   │   │   ├── item.py     # Example: item-related routes
+│   │   ├── v2/                 # (Optional) Future version of the API
+│   │   ├── dependencies.py     # Shared dependencies (e.g., DB session)
+│   ├── core/                   # Core components like settings, config, security
+│   │   ├── __init__.py
+│   │   ├── config.py           # Configuration settings (e.g., environment variables)
+│   │   ├── security.py         # Security-related utilities (e.g., JWT)
+│   │   ├── settings.py         # Settings management (e.g., loading env variables)
+│   ├── models/                 # ORM models or Pydantic schemas
+│   │   ├── __init__.py
+│   │   ├── user.py             # Example: user model
+│   │   ├── item.py             # Example: item model
+│   ├── schemas/                # Pydantic schemas for validation
+│   │   ├── __init__.py
+│   │   ├── user.py             # Example: user schema
+│   │   ├── item.py             # Example: item schema
+│   ├── services/               # Business logic and service layer
+│   │   ├── __init__.py
+│   │   ├── user_service.py     # Example: user service
+│   │   ├── item_service.py     # Example: item service
+│   ├── db/                     # Database-related code (e.g., SQLAlchemy models, migrations)
+│   │   ├── __init__.py
+│   │   ├── session.py          # Database session management
+│   │   ├── init_db.py          # Database initialization code (e.g., creating tables)
+│   ├── tests/                  # Unit and integration tests
+│   │   ├── __init__.py
+│   │   ├── test_user.py        # Example test file for user-related functionality
+│   │   ├── test_item.py        # Example test file for item-related functionality
+│   ├── utils/                  # Utility functions that are used across the app
+│   │   ├── __init__.py
+│   │   ├── date_utils.py       # Example utility: date-related functions
+│
+├── .env                         # Environment variables for sensitive data (e.g., DB URI, API keys)
+├── .gitignore                   # Git ignore file to exclude unnecessary files
+├── requirements.txt             # Project dependencies (including FastAPI and Uvicorn)
+├── alembic.ini                  # Alembic configuration file (if using migrations with SQLAlchemy)
+├── Dockerfile                   # Dockerfile for containerizing the app (optional)
+├── docker-compose.yml           # Docker Compose file for multi-container setup (optional)
+└── README.md                    # Project documentation
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;explanation-of-the-structure&#34;&gt;Explanation of the Structure:&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;app/&lt;/code&gt;&lt;/strong&gt;: This is where the majority of your code resides. It contains all your app-specific logic and modules.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;main.py&lt;/code&gt;&lt;/strong&gt;: The entry point of the FastAPI app. It includes the FastAPI instance, router inclusion, middleware setup, etc.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;api/&lt;/code&gt;&lt;/strong&gt;: This folder holds all your API-related logic. If your project has different versions or groups of endpoints, you can group them by version (e.g., &lt;code&gt;v1&lt;/code&gt;, &lt;code&gt;v2&lt;/code&gt;). Each version can have its own set of routes, controllers, and dependencies.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;core/&lt;/code&gt;&lt;/strong&gt;: Contains core functionality, such as app settings, security mechanisms (e.g., authentication), and other foundational components. This is where configuration files (e.g., environment variables, secrets) are loaded.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;models/&lt;/code&gt;&lt;/strong&gt;: If you are using an ORM like SQLAlchemy, this folder would contain your ORM models. These models define the structure of your database tables.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;schemas/&lt;/code&gt;&lt;/strong&gt;: This is where you define Pydantic models that are used for request validation and response formatting. Pydantic schemas ensure data consistency and provide automatic validation for input data.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;services/&lt;/code&gt;&lt;/strong&gt;: This folder is for the business logic layer. You can encapsulate your core logic here, such as interacting with the database or performing specific actions related to your resources (e.g., user service, item service).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;db/&lt;/code&gt;&lt;/strong&gt;: Contains all the database-related code. This includes database session management, migrations, and any helpers needed for interacting with the database.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;tests/&lt;/code&gt;&lt;/strong&gt;: This is where your tests live. Typically, you will write unit tests for individual components (e.g., services) and integration tests for end-to-end validation of API routes.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;utils/&lt;/code&gt;&lt;/strong&gt;: A folder for utility functions that don’t fit neatly into the core, services, or other categories. For example, helper functions for date formatting, file handling, etc.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;requirements.txt&lt;/code&gt;&lt;/strong&gt;: A file listing all dependencies required to run your FastAPI app, including &lt;code&gt;fastapi&lt;/code&gt;, &lt;code&gt;uvicorn&lt;/code&gt;, &lt;code&gt;sqlalchemy&lt;/code&gt;, etc.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;Dockerfile&lt;/code&gt; &amp;amp; &lt;code&gt;docker-compose.yml&lt;/code&gt;&lt;/strong&gt; (optional): If you&amp;rsquo;re containerizing your application, these files are necessary for setting up the containerized environment.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;.env&lt;/code&gt;&lt;/strong&gt;: This file holds environment variables for sensitive data like API keys, database credentials, and other settings that should not be hardcoded.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;README.md&lt;/code&gt;&lt;/strong&gt;: The documentation for your project, explaining the purpose, how to set it up, and how to contribute.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;example-of-mainpy&#34;&gt;Example of &lt;code&gt;main.py&lt;/code&gt;:&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; fastapi &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; FastAPI
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; app.api.v1 &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; endpoints
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;app &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; FastAPI()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Include the routes from the API version 1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;app&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;include_router(endpoints&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;router, prefix&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/v1&amp;#34;&lt;/span&gt;, tags&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;v1&amp;#34;&lt;/span&gt;])
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# You can add more versioned routers as your app grows&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;example-of-endpointsuserpy&#34;&gt;Example of &lt;code&gt;endpoints/user.py&lt;/code&gt;:&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; fastapi &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; APIRouter, Depends
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; app.schemas.user &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; User, UserCreate
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; app.services.user_service &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; create_user, get_user
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;router &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; APIRouter()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@router.post&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/users/&amp;#34;&lt;/span&gt;, response_model&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;User)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;create_user_endpoint&lt;/span&gt;(user: UserCreate):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; create_user(user)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@router.get&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/users/&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{user_id}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;, response_model&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;User)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;get_user_endpoint&lt;/span&gt;(user_id: int):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; get_user(user_id)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;This folder structure provides clear separation of concerns, modularity, and maintainability. It scales well for larger applications while keeping the codebase organized. You can easily extend the API by adding new versions in the &lt;code&gt;api/&lt;/code&gt; folder, handle configuration separately in &lt;code&gt;core/&lt;/code&gt;, and structure your database logic in &lt;code&gt;db/&lt;/code&gt;.&lt;/p&gt;
+</content>
+    </item>
+    
     <item>
       <title>How to completely uninstall NGINX</title>
       <link>https://blog.dimasirgiansyah.my.id/posts/how-to-completely-uninstall-nginx/</link>

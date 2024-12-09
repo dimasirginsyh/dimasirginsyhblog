@@ -172,6 +172,419 @@
     
       <article class="post on-list">
         <h1 class="post-title">
+          <a href="https://blog.dimasirgiansyah.my.id/posts/contoh-file-dari-rekomendasi-folder-python-fastapi-project/">Contoh File Dari Rekomendasi Folder Python FastAPI Project</a>
+        </h1>
+        <div class="post-meta"><time class="post-date">2024-12-09</time></div>
+
+        
+          <span class="post-tags">
+            
+            #<a href="https://blog.dimasirgiansyah.my.id/tags/mitoyus/">mitoyus</a>&nbsp;
+            
+            #<a href="https://blog.dimasirgiansyah.my.id/tags/blog/">blog</a>&nbsp;
+            
+            #<a href="https://blog.dimasirgiansyah.my.id/tags/python/">python</a>&nbsp;
+            
+            #<a href="https://blog.dimasirgiansyah.my.id/tags/indonesia/">indonesia</a>&nbsp;
+            
+            #<a href="https://blog.dimasirgiansyah.my.id/tags/chatgpt/">chatgpt</a>&nbsp;
+            
+            #<a href="https://blog.dimasirgiansyah.my.id/tags/fastapi/">fastapi</a>&nbsp;
+            
+          </span>
+        
+
+        
+
+
+        <div class="post-content">
+          
+            <p>Tentu! Berikut adalah contoh lengkap untuk setiap file dan folder dalam struktur folder FastAPI yang telah saya jelaskan sebelumnya. Saya akan memberikan contoh kode untuk setiap file utama, termasuk contoh <code>main.py</code>, API endpoints, model, schema, dan sebagainya. Ini akan memberikan gambaran lebih jelas tentang bagaimana mengorganisasi aplikasi FastAPI yang skalabel.</p>
+<h3 id="1-my_fastapi_projectappmainpy">1. <strong><code>my_fastapi_project/app/main.py</code></strong></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> fastapi <span style="color:#f92672">import</span> FastAPI
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> app.api.v1 <span style="color:#f92672">import</span> endpoints
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>app <span style="color:#f92672">=</span> FastAPI()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Include the routes from the API version 1</span>
+</span></span><span style="display:flex;"><span>app<span style="color:#f92672">.</span>include_router(endpoints<span style="color:#f92672">.</span>router, prefix<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/v1&#34;</span>, tags<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;v1&#34;</span>])
+</span></span></code></pre></div><h3 id="2-my_fastapi_projectappapiv1endpointsuserpy">2. <strong><code>my_fastapi_project/app/api/v1/endpoints/user.py</code></strong></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> fastapi <span style="color:#f92672">import</span> APIRouter, Depends
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> app.schemas.user <span style="color:#f92672">import</span> User, UserCreate
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> app.services.user_service <span style="color:#f92672">import</span> create_user, get_user
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>router <span style="color:#f92672">=</span> APIRouter()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@router.post</span>(<span style="color:#e6db74">&#34;/users/&#34;</span>, response_model<span style="color:#f92672">=</span>User)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">create_user_endpoint</span>(user: UserCreate):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> create_user(user)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@router.get</span>(<span style="color:#e6db74">&#34;/users/</span><span style="color:#e6db74">{user_id}</span><span style="color:#e6db74">&#34;</span>, response_model<span style="color:#f92672">=</span>User)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_user_endpoint</span>(user_id: int):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> get_user(user_id)
+</span></span></code></pre></div><h3 id="3-my_fastapi_projectappapiv1endpointsitempy">3. <strong><code>my_fastapi_project/app/api/v1/endpoints/item.py</code></strong></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> fastapi <span style="color:#f92672">import</span> APIRouter, Depends
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> app.schemas.item <span style="color:#f92672">import</span> Item, ItemCreate
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> app.services.item_service <span style="color:#f92672">import</span> create_item, get_item
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>router <span style="color:#f92672">=</span> APIRouter()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@router.post</span>(<span style="color:#e6db74">&#34;/items/&#34;</span>, response_model<span style="color:#f92672">=</span>Item)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">create_item_endpoint</span>(item: ItemCreate):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> create_item(item)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@router.get</span>(<span style="color:#e6db74">&#34;/items/</span><span style="color:#e6db74">{item_id}</span><span style="color:#e6db74">&#34;</span>, response_model<span style="color:#f92672">=</span>Item)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_item_endpoint</span>(item_id: int):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> get_item(item_id)
+</span></span></code></pre></div><h3 id="4-my_fastapi_projectappcoreconfigpy">4. <strong><code>my_fastapi_project/app/core/config.py</code></strong></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> os
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> dotenv <span style="color:#f92672">import</span> load_dotenv
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>load_dotenv()  <span style="color:#75715e"># Load environment variables from .env</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Config</span>:
+</span></span><span style="display:flex;"><span>    API_KEY <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>getenv(<span style="color:#e6db74">&#34;API_KEY&#34;</span>)
+</span></span><span style="display:flex;"><span>    DB_URL <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>getenv(<span style="color:#e6db74">&#34;DATABASE_URL&#34;</span>)
+</span></span><span style="display:flex;"><span>    SECRET_KEY <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>getenv(<span style="color:#e6db74">&#34;SECRET_KEY&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>config <span style="color:#f92672">=</span> Config()
+</span></span></code></pre></div><h3 id="5-my_fastapi_projectappcoresecuritypy">5. <strong><code>my_fastapi_project/app/core/security.py</code></strong></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> passlib.context <span style="color:#f92672">import</span> CryptContext
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Password hashing</span>
+</span></span><span style="display:flex;"><span>pwd_context <span style="color:#f92672">=</span> CryptContext(schemes<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;bcrypt&#34;</span>], deprecated<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;auto&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">hash_password</span>(password: str) <span style="color:#f92672">-&gt;</span> str:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> pwd_context<span style="color:#f92672">.</span>hash(password)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">verify_password</span>(plain_password: str, hashed_password: str) <span style="color:#f92672">-&gt;</span> bool:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> pwd_context<span style="color:#f92672">.</span>verify(plain_password, hashed_password)
+</span></span></code></pre></div><h3 id="6-my_fastapi_projectappmodelsuserpy">6. <strong><code>my_fastapi_project/app/models/user.py</code></strong></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> sqlalchemy <span style="color:#f92672">import</span> Column, Integer, String
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> app.db.session <span style="color:#f92672">import</span> Base
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">User</span>(Base):
+</span></span><span style="display:flex;"><span>    __tablename__ <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;users&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    id <span style="color:#f92672">=</span> Column(Integer, primary_key<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>, index<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>    username <span style="color:#f92672">=</span> Column(String, unique<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>, index<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>    hashed_password <span style="color:#f92672">=</span> Column(String)
+</span></span></code></pre></div><h3 id="7-my_fastapi_projectappmodelsitempy">7. <strong><code>my_fastapi_project/app/models/item.py</code></strong></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> sqlalchemy <span style="color:#f92672">import</span> Column, Integer, String
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> app.db.session <span style="color:#f92672">import</span> Base
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Item</span>(Base):
+</span></span><span style="display:flex;"><span>    __tablename__ <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;items&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    id <span style="color:#f92672">=</span> Column(Integer, primary_key<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>, index<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>    name <span style="color:#f92672">=</span> Column(String, index<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>    description <span style="color:#f92672">=</span> Column(String)
+</span></span></code></pre></div><h3 id="8-my_fastapi_projectappschemasuserpy">8. <strong><code>my_fastapi_project/app/schemas/user.py</code></strong></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> pydantic <span style="color:#f92672">import</span> BaseModel
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">User</span>(BaseModel):
+</span></span><span style="display:flex;"><span>    id: int
+</span></span><span style="display:flex;"><span>    username: str
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Config</span>:
+</span></span><span style="display:flex;"><span>        orm_mode <span style="color:#f92672">=</span> <span style="color:#66d9ef">True</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">UserCreate</span>(BaseModel):
+</span></span><span style="display:flex;"><span>    username: str
+</span></span><span style="display:flex;"><span>    password: str
+</span></span></code></pre></div><h3 id="9-my_fastapi_projectappschemasitempy">9. <strong><code>my_fastapi_project/app/schemas/item.py</code></strong></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> pydantic <span style="color:#f92672">import</span> BaseModel
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Item</span>(BaseModel):
+</span></span><span style="display:flex;"><span>    id: int
+</span></span><span style="display:flex;"><span>    name: str
+</span></span><span style="display:flex;"><span>    description: str
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Config</span>:
+</span></span><span style="display:flex;"><span>        orm_mode <span style="color:#f92672">=</span> <span style="color:#66d9ef">True</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ItemCreate</span>(BaseModel):
+</span></span><span style="display:flex;"><span>    name: str
+</span></span><span style="display:flex;"><span>    description: str
+</span></span></code></pre></div><h3 id="10-my_fastapi_projectappservicesuser_servicepy">10. <strong><code>my_fastapi_project/app/services/user_service.py</code></strong></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> app.models.user <span style="color:#f92672">import</span> User
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> app.schemas.user <span style="color:#f92672">import</span> UserCreate
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> app.db.session <span style="color:#f92672">import</span> SessionLocal
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> app.core.security <span style="color:#f92672">import</span> hash_password
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">create_user</span>(user_create: UserCreate):
+</span></span><span style="display:flex;"><span>    db <span style="color:#f92672">=</span> SessionLocal()
+</span></span><span style="display:flex;"><span>    hashed_password <span style="color:#f92672">=</span> hash_password(user_create<span style="color:#f92672">.</span>password)
+</span></span><span style="display:flex;"><span>    db_user <span style="color:#f92672">=</span> User(username<span style="color:#f92672">=</span>user_create<span style="color:#f92672">.</span>username, hashed_password<span style="color:#f92672">=</span>hashed_password)
+</span></span><span style="display:flex;"><span>    db<span style="color:#f92672">.</span>add(db_user)
+</span></span><span style="display:flex;"><span>    db<span style="color:#f92672">.</span>commit()
+</span></span><span style="display:flex;"><span>    db<span style="color:#f92672">.</span>refresh(db_user)
+</span></span><span style="display:flex;"><span>    db<span style="color:#f92672">.</span>close()
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> db_user
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_user</span>(user_id: int):
+</span></span><span style="display:flex;"><span>    db <span style="color:#f92672">=</span> SessionLocal()
+</span></span><span style="display:flex;"><span>    db_user <span style="color:#f92672">=</span> db<span style="color:#f92672">.</span>query(User)<span style="color:#f92672">.</span>filter(User<span style="color:#f92672">.</span>id <span style="color:#f92672">==</span> user_id)<span style="color:#f92672">.</span>first()
+</span></span><span style="display:flex;"><span>    db<span style="color:#f92672">.</span>close()
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> db_user
+</span></span></code></pre></div><h3 id="11-my_fastapi_projectappservicesitem_servicepy">11. <strong><code>my_fastapi_project/app/services/item_service.py</code></strong></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> app.models.item <span style="color:#f92672">import</span> Item
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> app.schemas.item <span style="color:#f92672">import</span> ItemCreate
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> app.db.session <span style="color:#f92672">import</span> SessionLocal
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">create_item</span>(item_create: ItemCreate):
+</span></span><span style="display:flex;"><span>    db <span style="color:#f92672">=</span> SessionLocal()
+</span></span><span style="display:flex;"><span>    db_item <span style="color:#f92672">=</span> Item(name<span style="color:#f92672">=</span>item_create<span style="color:#f92672">.</span>name, description<span style="color:#f92672">=</span>item_create<span style="color:#f92672">.</span>description)
+</span></span><span style="display:flex;"><span>    db<span style="color:#f92672">.</span>add(db_item)
+</span></span><span style="display:flex;"><span>    db<span style="color:#f92672">.</span>commit()
+</span></span><span style="display:flex;"><span>    db<span style="color:#f92672">.</span>refresh(db_item)
+</span></span><span style="display:flex;"><span>    db<span style="color:#f92672">.</span>close()
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> db_item
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_item</span>(item_id: int):
+</span></span><span style="display:flex;"><span>    db <span style="color:#f92672">=</span> SessionLocal()
+</span></span><span style="display:flex;"><span>    db_item <span style="color:#f92672">=</span> db<span style="color:#f92672">.</span>query(Item)<span style="color:#f92672">.</span>filter(Item<span style="color:#f92672">.</span>id <span style="color:#f92672">==</span> item_id)<span style="color:#f92672">.</span>first()
+</span></span><span style="display:flex;"><span>    db<span style="color:#f92672">.</span>close()
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> db_item
+</span></span></code></pre></div><h3 id="12-my_fastapi_projectappdbsessionpy">12. <strong><code>my_fastapi_project/app/db/session.py</code></strong></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> sqlalchemy <span style="color:#f92672">import</span> create_engine
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> sqlalchemy.ext.declarative <span style="color:#f92672">import</span> declarative_base
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> sqlalchemy.orm <span style="color:#f92672">import</span> sessionmaker
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>SQLALCHEMY_DATABASE_URL <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;sqlite:///./test.db&#34;</span>  <span style="color:#75715e"># Replace with your actual database URL</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>engine <span style="color:#f92672">=</span> create_engine(SQLALCHEMY_DATABASE_URL, connect_args<span style="color:#f92672">=</span>{<span style="color:#e6db74">&#34;check_same_thread&#34;</span>: <span style="color:#66d9ef">False</span>})
+</span></span><span style="display:flex;"><span>SessionLocal <span style="color:#f92672">=</span> sessionmaker(autocommit<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>, autoflush<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>, bind<span style="color:#f92672">=</span>engine)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Base <span style="color:#f92672">=</span> declarative_base()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># To initialize the database (create tables)</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">init_db</span>():
+</span></span><span style="display:flex;"><span>    Base<span style="color:#f92672">.</span>metadata<span style="color:#f92672">.</span>create_all(bind<span style="color:#f92672">=</span>engine)
+</span></span></code></pre></div><h3 id="13-my_fastapi_projectappteststest_userpy">13. <strong><code>my_fastapi_project/app/tests/test_user.py</code></strong></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> fastapi.testclient <span style="color:#f92672">import</span> TestClient
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> app.main <span style="color:#f92672">import</span> app
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>client <span style="color:#f92672">=</span> TestClient(app)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">test_create_user</span>():
+</span></span><span style="display:flex;"><span>    response <span style="color:#f92672">=</span> client<span style="color:#f92672">.</span>post(<span style="color:#e6db74">&#34;/v1/users/&#34;</span>, json<span style="color:#f92672">=</span>{<span style="color:#e6db74">&#34;username&#34;</span>: <span style="color:#e6db74">&#34;testuser&#34;</span>, <span style="color:#e6db74">&#34;password&#34;</span>: <span style="color:#e6db74">&#34;password123&#34;</span>})
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">assert</span> response<span style="color:#f92672">.</span>status_code <span style="color:#f92672">==</span> <span style="color:#ae81ff">200</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">assert</span> response<span style="color:#f92672">.</span>json()[<span style="color:#e6db74">&#34;username&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;testuser&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">test_get_user</span>():
+</span></span><span style="display:flex;"><span>    response <span style="color:#f92672">=</span> client<span style="color:#f92672">.</span>post(<span style="color:#e6db74">&#34;/v1/users/&#34;</span>, json<span style="color:#f92672">=</span>{<span style="color:#e6db74">&#34;username&#34;</span>: <span style="color:#e6db74">&#34;testuser&#34;</span>, <span style="color:#e6db74">&#34;password&#34;</span>: <span style="color:#e6db74">&#34;password123&#34;</span>})
+</span></span><span style="display:flex;"><span>    user_id <span style="color:#f92672">=</span> response<span style="color:#f92672">.</span>json()[<span style="color:#e6db74">&#34;id&#34;</span>]
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    response <span style="color:#f92672">=</span> client<span style="color:#f92672">.</span>get(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;/v1/users/</span><span style="color:#e6db74">{</span>user_id<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">assert</span> response<span style="color:#f92672">.</span>status_code <span style="color:#f92672">==</span> <span style="color:#ae81ff">200</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">assert</span> response<span style="color:#f92672">.</span>json()[<span style="color:#e6db74">&#34;id&#34;</span>] <span style="color:#f92672">==</span> user_id
+</span></span></code></pre></div><h3 id="14-my_fastapi_projectapputilsdate_utilspy">14. <strong><code>my_fastapi_project/app/utils/date_utils.py</code></strong></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> datetime
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">current_time</span>():
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> datetime<span style="color:#f92672">.</span>utcnow()<span style="color:#f92672">.</span>strftime(<span style="color:#e6db74">&#34;%Y-%m-</span><span style="color:#e6db74">%d</span><span style="color:#e6db74"> %H:%M:%S&#34;</span>)
+</span></span></code></pre></div><h3 id="15-my_fastapi_projectenv">15. <strong><code>my_fastapi_project/.env</code></strong></h3>
+<pre tabindex="0"><code>API_KEY=your_api_key_here
+DATABASE_URL=sqlite:///./test.db  # Replace with your actual database URL
+SECRET_KEY=your_secret_key_here
+</code></pre><h3 id="16-my_fastapi_projectrequirementstxt">16. <strong><code>my_fastapi_project/requirements.txt</code></strong></h3>
+<pre tabindex="0"><code>fastapi
+uvicorn
+sqlalchemy
+pydantic
+passlib
+python-dotenv
+</code></pre><h3 id="17-my_fastapi_projectdockerfile-optional">17. <strong><code>my_fastapi_project/Dockerfile</code></strong> (optional)</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Dockerfile" data-lang="Dockerfile"><span style="display:flex;"><span><span style="color:#75715e"># Use official Python image</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">FROM</span><span style="color:#e6db74"> python:3.10-slim</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Set working directory</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">WORKDIR</span><span style="color:#e6db74"> /app</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Copy requirements and install</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> requirements.txt .<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> pip install --no-cache-dir -r requirements.txt<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Copy the rest of the application</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> . .<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Expose port 8000 for FastAPI</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">EXPOSE</span><span style="color:#e6db74"> 8000</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Run the application with Uvicorn</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">CMD</span> [<span style="color:#e6db74">&#34;uvicorn&#34;</span>, <span style="color:#e6db74">&#34;app.main:app&#34;</span>, <span style="color:#e6db74">&#34;--host&#34;</span>, <span style="color:#e6db74">&#34;0.0.0.0&#34;</span>, <span style="color:#e6db74">&#34;--port&#34;</span>, <span style="color:#e6db74">&#34;8000&#34;</span>]<span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><h3 id="18-my_fastapi_projectdocker-composeyml-optional">18. <strong><code>my_fastapi_project/docker-compose.yml</code></strong> (optional)</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">version</span>: <span style="color:#e6db74">&#34;3.8&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">services</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">app</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">build</span>: <span style="color:#ae81ff">.</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">ports</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#e6db74">&#34;8000:8000&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">environment</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">DATABASE_URL=sqlite:///./test.db</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">volumes</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">.:/app</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">command</span>: <span style="color:#ae81ff">uvicorn app.main:app --host 0.0.0.0 --port 8000</span>
+</span></span></code></pre></div><h3 id="conclusion">Conclusion</h3>
+<p>Dengan struktur ini, Anda memiliki aplikasi FastAPI yang terorganisir dengan baik, memisahkan setiap bagian dari aplikasi (API, model, schema, logika bisnis, dll). Ini memudahkan pengembangan dan pemeliharaan proyek, serta mendukung pengembangan lebih lanjut saat aplikasi Anda tumbuh.</p>
+          
+        </div>
+
+        
+          <div>
+            <a class="read-more button inline" href="/posts/contoh-file-dari-rekomendasi-folder-python-fastapi-project/">Read more</a>
+          </div>
+        
+      </article>
+    
+      <article class="post on-list">
+        <h1 class="post-title">
+          <a href="https://blog.dimasirgiansyah.my.id/posts/jika-kamu-bingung-kok-ada-file-__init__.py-tapi-gak-ada-dicontoh-ini-solusinya/">Jika Kamu Bingung Kok Ada File <strong>init</strong>.py tapi gak ada dicontoh, ini solusinya</a>
+        </h1>
+        <div class="post-meta"><time class="post-date">2024-12-09</time></div>
+
+        
+          <span class="post-tags">
+            
+            #<a href="https://blog.dimasirgiansyah.my.id/tags/mitoyus/">mitoyus</a>&nbsp;
+            
+            #<a href="https://blog.dimasirgiansyah.my.id/tags/blog/">blog</a>&nbsp;
+            
+            #<a href="https://blog.dimasirgiansyah.my.id/tags/python/">python</a>&nbsp;
+            
+            #<a href="https://blog.dimasirgiansyah.my.id/tags/indonesia/">indonesia</a>&nbsp;
+            
+            #<a href="https://blog.dimasirgiansyah.my.id/tags/chatgpt/">chatgpt</a>&nbsp;
+            
+            #<a href="https://blog.dimasirgiansyah.my.id/tags/fastapi/">fastapi</a>&nbsp;
+            
+          </span>
+        
+
+        
+
+
+        <div class="post-content">
+          
+            <p>Berikut adalah contoh isi dari file <code>__init__.py</code> yang perlu dimasukkan dalam setiap folder untuk memastikan folder tersebut diperlakukan sebagai paket Python (module), dan memungkinkan Anda untuk mengimpor modul-modul dalam folder tersebut.</p>
+<h3 id="1-my_fastapi_projectapp__init__py">1. <strong><code>my_fastapi_project/app/__init__.py</code></strong></h3>
+<p>File ini akan menginisialisasi folder <code>app</code> sebagai paket. Biasanya file ini kosong, tetapi kadang bisa berisi pengaturan atau import global.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># app/__init__.py</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Tidak ada yang perlu dimasukkan di sini jika tidak ada pengaturan tambahan</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Tetapi Anda bisa menambah kode global yang ingin diekspor jika diperlukan</span>
+</span></span></code></pre></div><h3 id="2-my_fastapi_projectappapi__init__py">2. <strong><code>my_fastapi_project/app/api/__init__.py</code></strong></h3>
+<p>Folder ini berisi modul API. Anda bisa menambah pengaturan impor umum di sini, terutama jika Anda ingin mengelompokkan versi API.</p>
+          
+        </div>
+
+        
+          <div>
+            <a class="read-more button inline" href="/posts/jika-kamu-bingung-kok-ada-file-__init__.py-tapi-gak-ada-dicontoh-ini-solusinya/">Read more</a>
+          </div>
+        
+      </article>
+    
+      <article class="post on-list">
+        <h1 class="post-title">
+          <a href="https://blog.dimasirgiansyah.my.id/posts/recommendation-structure-folder-for-a-python-fastapi-projects/">Recommendation Structure Folder For a Python FastAPI Projects</a>
+        </h1>
+        <div class="post-meta"><time class="post-date">2024-12-09</time></div>
+
+        
+          <span class="post-tags">
+            
+            #<a href="https://blog.dimasirgiansyah.my.id/tags/mitoyus/">mitoyus</a>&nbsp;
+            
+            #<a href="https://blog.dimasirgiansyah.my.id/tags/blog/">blog</a>&nbsp;
+            
+            #<a href="https://blog.dimasirgiansyah.my.id/tags/python/">python</a>&nbsp;
+            
+            #<a href="https://blog.dimasirgiansyah.my.id/tags/english/">english</a>&nbsp;
+            
+            #<a href="https://blog.dimasirgiansyah.my.id/tags/chatgpt/">chatgpt</a>&nbsp;
+            
+            #<a href="https://blog.dimasirgiansyah.my.id/tags/fastapi/">fastapi</a>&nbsp;
+            
+          </span>
+        
+
+        
+
+
+        <div class="post-content">
+          
+            <p>When structuring a folder for a <strong>Python FastAPI</strong> project, it&rsquo;s essential to maintain modularity and scalability, especially as your project grows. A good folder structure helps to separate concerns, making it easier to manage and maintain the codebase.</p>
+<p>Here&rsquo;s a recommended folder structure for a typical FastAPI project:</p>
+<h3 id="recommended-folder-structure">Recommended Folder Structure</h3>
+<pre tabindex="0"><code>my_fastapi_project/
+│
+├── app/                        # Main application code
+│   ├── __init__.py
+│   ├── main.py                 # Entry point for the FastAPI application
+│   ├── api/                    # API routes and business logic
+│   │   ├── __init__.py
+│   │   ├── v1/                 # Versioned API (optional, but good for future scalability)
+│   │   │   ├── __init__.py
+│   │   │   ├── endpoints/      # Routes for version 1 API
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── user.py     # Example: user-related routes
+│   │   │   │   ├── item.py     # Example: item-related routes
+│   │   ├── v2/                 # (Optional) Future version of the API
+│   │   ├── dependencies.py     # Shared dependencies (e.g., DB session)
+│   ├── core/                   # Core components like settings, config, security
+│   │   ├── __init__.py
+│   │   ├── config.py           # Configuration settings (e.g., environment variables)
+│   │   ├── security.py         # Security-related utilities (e.g., JWT)
+│   │   ├── settings.py         # Settings management (e.g., loading env variables)
+│   ├── models/                 # ORM models or Pydantic schemas
+│   │   ├── __init__.py
+│   │   ├── user.py             # Example: user model
+│   │   ├── item.py             # Example: item model
+│   ├── schemas/                # Pydantic schemas for validation
+│   │   ├── __init__.py
+│   │   ├── user.py             # Example: user schema
+│   │   ├── item.py             # Example: item schema
+│   ├── services/               # Business logic and service layer
+│   │   ├── __init__.py
+│   │   ├── user_service.py     # Example: user service
+│   │   ├── item_service.py     # Example: item service
+│   ├── db/                     # Database-related code (e.g., SQLAlchemy models, migrations)
+│   │   ├── __init__.py
+│   │   ├── session.py          # Database session management
+│   │   ├── init_db.py          # Database initialization code (e.g., creating tables)
+│   ├── tests/                  # Unit and integration tests
+│   │   ├── __init__.py
+│   │   ├── test_user.py        # Example test file for user-related functionality
+│   │   ├── test_item.py        # Example test file for item-related functionality
+│   ├── utils/                  # Utility functions that are used across the app
+│   │   ├── __init__.py
+│   │   ├── date_utils.py       # Example utility: date-related functions
+│
+├── .env                         # Environment variables for sensitive data (e.g., DB URI, API keys)
+├── .gitignore                   # Git ignore file to exclude unnecessary files
+├── requirements.txt             # Project dependencies (including FastAPI and Uvicorn)
+├── alembic.ini                  # Alembic configuration file (if using migrations with SQLAlchemy)
+├── Dockerfile                   # Dockerfile for containerizing the app (optional)
+├── docker-compose.yml           # Docker Compose file for multi-container setup (optional)
+└── README.md                    # Project documentation
+</code></pre><h3 id="explanation-of-the-structure">Explanation of the Structure:</h3>
+<ol>
+<li>
+<p><strong><code>app/</code></strong>: This is where the majority of your code resides. It contains all your app-specific logic and modules.</p>
+          
+        </div>
+
+        
+          <div>
+            <a class="read-more button inline" href="/posts/recommendation-structure-folder-for-a-python-fastapi-projects/">Read more</a>
+          </div>
+        
+      </article>
+    
+      <article class="post on-list">
+        <h1 class="post-title">
           <a href="https://blog.dimasirgiansyah.my.id/posts/how-to-completely-uninstall-nginx/">How to completely uninstall NGINX</a>
         </h1>
         <div class="post-meta"><time class="post-date">2024-12-08</time></div>
@@ -317,168 +730,15 @@
         
       </article>
     
-      <article class="post on-list">
-        <h1 class="post-title">
-          <a href="https://blog.dimasirgiansyah.my.id/posts/create-a-rest-api-with-rust-and-connect-to-telegram-bot/">Create a REST API with Rust and Connect to Telegram Bot</a>
-        </h1>
-        <div class="post-meta"><time class="post-date">2024-12-04</time></div>
-
-        
-          <span class="post-tags">
-            
-            #<a href="https://blog.dimasirgiansyah.my.id/tags/rust/">rust</a>&nbsp;
-            
-            #<a href="https://blog.dimasirgiansyah.my.id/tags/mitoyus/">mitoyus</a>&nbsp;
-            
-            #<a href="https://blog.dimasirgiansyah.my.id/tags/blog/">blog</a>&nbsp;
-            
-            #<a href="https://blog.dimasirgiansyah.my.id/tags/telegram/">telegram</a>&nbsp;
-            
-            #<a href="https://blog.dimasirgiansyah.my.id/tags/chatgpt/">chatgpt</a>&nbsp;
-            
-            #<a href="https://blog.dimasirgiansyah.my.id/tags/english/">english</a>&nbsp;
-            
-          </span>
-        
-
-        
-
-
-        <div class="post-content">
-          
-            <p>To create a REST API with Rust that allows you to send photos and videos to a Telegram bot, we can use the Actix Web framework for the API and the Teloxide library for interacting with the Telegram bot.</p>
-<h3 id="steps">Steps:</h3>
-<ol>
-<li><strong>Set up Actix Web</strong> to create the REST API.</li>
-<li><strong>Use Teloxide</strong> to interact with the Telegram API for sending media.</li>
-<li><strong>Use multipart form data</strong> to handle file uploads in the REST API.</li>
-</ol>
-<h3 id="dependencies">Dependencies:</h3>
-<p>You will need the following dependencies in <code>Cargo.toml</code>:</p>
-          
-        </div>
-
-        
-          <div>
-            <a class="read-more button inline" href="/posts/create-a-rest-api-with-rust-and-connect-to-telegram-bot/">Read more</a>
-          </div>
-        
-      </article>
-    
-      <article class="post on-list">
-        <h1 class="post-title">
-          <a href="https://blog.dimasirgiansyah.my.id/posts/recommendation-structure-folder-for-rust-apps/">Recommendation Structure Folder For Rust Apps</a>
-        </h1>
-        <div class="post-meta"><time class="post-date">2024-12-04</time></div>
-
-        
-          <span class="post-tags">
-            
-            #<a href="https://blog.dimasirgiansyah.my.id/tags/rust/">rust</a>&nbsp;
-            
-            #<a href="https://blog.dimasirgiansyah.my.id/tags/mitoyus/">mitoyus</a>&nbsp;
-            
-            #<a href="https://blog.dimasirgiansyah.my.id/tags/blog/">blog</a>&nbsp;
-            
-            #<a href="https://blog.dimasirgiansyah.my.id/tags/chatgpt/">chatgpt</a>&nbsp;
-            
-            #<a href="https://blog.dimasirgiansyah.my.id/tags/english/">english</a>&nbsp;
-            
-          </span>
-        
-
-        
-
-
-        <div class="post-content">
-          
-            <p>When organizing a Rust application, it&rsquo;s important to follow a folder structure that is both maintainable and scalable. A well-organized folder structure makes it easier for developers to understand the code, contribute to the project, and scale the application as it grows. Below is a recommended structure for a typical Rust application, with explanations for each part.</p>
-<h3 id="recommended-folder-structure">Recommended Folder Structure</h3>
-<pre tabindex="0"><code>my_rust_app/
-├── Cargo.toml                # Project configuration (dependencies, metadata)
-├── Cargo.lock                # Lock file (generated after running `cargo build`)
-├── src/                      # Source files
-│   ├── main.rs               # Main entry point (binary application)
-│   ├── lib.rs                # Common library code (if applicable)
-│   ├── bin/                  # Additional binaries (optional)
-│   ├── models/               # Data models (e.g., structs, enums, etc.)
-│   ├── services/             # Business logic / services
-│   ├── handlers/             # Request handlers (e.g., for web servers)
-│   ├── utils/                # Utility modules (e.g., helpers, utils)
-│   ├── db/                   # Database-related code (e.g., migrations, queries)
-│   ├── config/               # Configuration and environment setup
-│   └── tests/                # Unit and integration tests
-├── examples/                 # Example projects or usage demonstrations
-├── target/                   # Build output directory (auto-generated by Cargo)
-├── tests/                    # Integration tests (optional, alternative to `src/tests`)
-├── scripts/                  # Utility scripts (e.g., setup, data generation)
-└── README.md                 # Project documentation
-</code></pre><h3 id="explanation-of-folders-and-files">Explanation of Folders and Files</h3>
-<h4 id="1-cargotoml--cargolock">1. <code>Cargo.toml</code> &amp; <code>Cargo.lock</code></h4>
-<ul>
-<li><strong><code>Cargo.toml</code></strong>: This is the main configuration file for the Rust project. It contains metadata, dependencies, and build configuration for the project.</li>
-<li><strong><code>Cargo.lock</code></strong>: This file is automatically generated when you run <code>cargo build</code> or <code>cargo install</code> to lock the dependencies to specific versions. You should commit this file to ensure consistent builds.</li>
-</ul>
-<h4 id="2-src">2. <code>src/</code></h4>
-<p>This folder contains the core source code of the project.</p>
-          
-        </div>
-
-        
-          <div>
-            <a class="read-more button inline" href="/posts/recommendation-structure-folder-for-rust-apps/">Read more</a>
-          </div>
-        
-      </article>
-    
-      <article class="post on-list">
-        <h1 class="post-title">
-          <a href="https://blog.dimasirgiansyah.my.id/posts/setting-subdomain-cloudflare-for-hugo-website-in-github-page/">Setting Subdomain Cloudflare for hugo website in github page</a>
-        </h1>
-        <div class="post-meta"><time class="post-date">2024-12-04</time></div>
-
-        
-          <span class="post-tags">
-            
-            #<a href="https://blog.dimasirgiansyah.my.id/tags/go/">go</a>&nbsp;
-            
-            #<a href="https://blog.dimasirgiansyah.my.id/tags/mitoyus/">mitoyus</a>&nbsp;
-            
-            #<a href="https://blog.dimasirgiansyah.my.id/tags/blog/">blog</a>&nbsp;
-            
-            #<a href="https://blog.dimasirgiansyah.my.id/tags/cloudflare/">cloudflare</a>&nbsp;
-            
-            #<a href="https://blog.dimasirgiansyah.my.id/tags/github/">github</a>&nbsp;
-            
-            #<a href="https://blog.dimasirgiansyah.my.id/tags/chatgpt/">chatgpt</a>&nbsp;
-            
-            #<a href="https://blog.dimasirgiansyah.my.id/tags/english/">english</a>&nbsp;
-            
-          </span>
-        
-
-        
-
-
-        <div class="post-content">
-          
-            <p>If you&rsquo;re using the <strong>Hugo</strong> framework to deploy your site on GitHub Pages and you&rsquo;re experiencing issues with missing styles or incorrect layout after setting up a subdomain through Cloudflare, there are a few things to check and configure. Here&rsquo;s a detailed guide to ensure that everything works smoothly.</p>
-<h3 id="1-check-the-baseurl-in-hugos-configuration">1. <strong>Check the <code>baseURL</code> in Hugo&rsquo;s Configuration</strong></h3>
-<p>The <code>baseURL</code> setting in Hugo&rsquo;s <code>config.toml</code> (or <code>config.yaml</code> or <code>config.json</code>, depending on your setup) is critical for making sure your site works correctly with a custom subdomain or domain.</p>
-          
-        </div>
-
-        
-          <div>
-            <a class="read-more button inline" href="/posts/setting-subdomain-cloudflare-for-hugo-website-in-github-page/">Read more</a>
-          </div>
-        
-      </article>
-    
 
     <div class="pagination">
   <div class="pagination__buttons">
     
+    
+      <a href="/tags/mitoyus/page/2/" class="button next">
+        <span class="button__text">Older posts</span>
+        <span class="button__icon">→</span>
+      </a>
     
   </div>
 </div>

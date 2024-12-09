@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Jika Kamu Bingung Kok Ada File __init__.py tapi gak ada dicontoh, ini solusinya :: Blog Dimas Irgiansyah</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Berikut adalah contoh isi dari file __init__.py yang perlu dimasukkan dalam setiap folder untuk memastikan folder tersebut diperlakukan sebagai paket Python (module), dan memungkinkan Anda untuk mengimpor modul-modul dalam folder tersebut.
+1. my_fastapi_project/app/__init__.py File ini akan menginisialisasi folder app sebagai paket. Biasanya file ini kosong, tetapi kadang bisa berisi pengaturan atau import global.
+# app/__init__.py # Tidak ada yang perlu dimasukkan di sini jika tidak ada pengaturan tambahan # Tetapi Anda bisa menambah kode global yang ingin diekspor jika diperlukan 2. my_fastapi_project/app/api/__init__.py Folder ini berisi modul API. Anda bisa menambah pengaturan impor umum di sini, terutama jika Anda ingin mengelompokkan versi API.
+" />
+<meta name="keywords" content="" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="https://blog.dimasirgiansyah.my.id/posts/jika-kamu-bingung-kok-ada-file-__init__.py-tapi-gak-ada-dicontoh-ini-solusinya/" />
+
+
+
+
+
+  
+  <link rel="stylesheet" href="https://blog.dimasirgiansyah.my.id/css/buttons.min.2bc533403a27dfe0e93105a92502b42ce4587e2e4a87d9f7d349e51e16e09478.css">
+
+  
+  <link rel="stylesheet" href="https://blog.dimasirgiansyah.my.id/css/code.min.00125962708925857e7b66dbc58391d55be1191a3d0ce2034de8c9cd2c481c36.css">
+
+  
+  <link rel="stylesheet" href="https://blog.dimasirgiansyah.my.id/css/fonts.min.4881f0c525f3ce2a1864fb6e96676396cebe1e6fcef1933e8e1dde7041004fb5.css">
+
+  
+  <link rel="stylesheet" href="https://blog.dimasirgiansyah.my.id/css/footer.min.2e3eb191baee58dd05a9f0104ac1fab0827bca7c64dafe0b2579f934c33a1d69.css">
+
+  
+  <link rel="stylesheet" href="https://blog.dimasirgiansyah.my.id/css/gist.min.a751e8b0abe1ba8bc53ced52a38b19d8950fe78ca29454ea8c2595cf26aad5c0.css">
+
+  
+  <link rel="stylesheet" href="https://blog.dimasirgiansyah.my.id/css/header.min.b6fb4423cf82a9f9d7abc9cd010223fa3d70a6526a3f28f8e17d814c06e18f9e.css">
+
+  
+  <link rel="stylesheet" href="https://blog.dimasirgiansyah.my.id/css/main.min.fe8dc560fccb53a458b0db19ccb7b265764ac46b68596b7e099c6793054dd457.css">
+
+  
+  <link rel="stylesheet" href="https://blog.dimasirgiansyah.my.id/css/menu.min.83637a90d903026bc280d3f82f96ceb06c5fc72b7c1a8d686afb5bbf818a29f7.css">
+
+  
+  <link rel="stylesheet" href="https://blog.dimasirgiansyah.my.id/css/pagination.min.82f6400eae7c7c6dc3c866733c2ec0579e4089608fea69400ff85b3880aa0d3c.css">
+
+  
+  <link rel="stylesheet" href="https://blog.dimasirgiansyah.my.id/css/post.min.fc74ca360273c1d828da3c02b8174eba435607b369d98418ccc6f2243cd4e75d.css">
+
+  
+  <link rel="stylesheet" href="https://blog.dimasirgiansyah.my.id/css/prism.min.9023bbc24533d09e97a51a0a42a5a7bfe4c591ae167c5551fb1d2191d11977c0.css">
+
+  
+  <link rel="stylesheet" href="https://blog.dimasirgiansyah.my.id/css/syntax.min.cc789ed9377260d7949ea4c18781fc58959a89287210fe4edbff44ebfc1511b6.css">
+
+  
+  <link rel="stylesheet" href="https://blog.dimasirgiansyah.my.id/css/terminal.min.dd0bf9c7cacb24c1b0184f52f1869b274e06689557468cc7030ccf632328eb97.css">
+
+  
+  <link rel="stylesheet" href="https://blog.dimasirgiansyah.my.id/css/terms.min.b81791663c3790e738e571cdbf802312390d30e4b1d8dc9d814a5b5454d0ac11.css">
+
+
+
+
+
+
+
+<link rel="shortcut icon" href="https://blog.dimasirgiansyah.my.id/favicon.png">
+<link rel="apple-touch-icon" href="https://blog.dimasirgiansyah.my.id/apple-touch-icon.png">
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Jika Kamu Bingung Kok Ada File __init__.py tapi gak ada dicontoh, ini solusinya">
+<meta property="og:description" content="Berikut adalah contoh isi dari file __init__.py yang perlu dimasukkan dalam setiap folder untuk memastikan folder tersebut diperlakukan sebagai paket Python (module), dan memungkinkan Anda untuk mengimpor modul-modul dalam folder tersebut.
+1. my_fastapi_project/app/__init__.py File ini akan menginisialisasi folder app sebagai paket. Biasanya file ini kosong, tetapi kadang bisa berisi pengaturan atau import global.
+# app/__init__.py # Tidak ada yang perlu dimasukkan di sini jika tidak ada pengaturan tambahan # Tetapi Anda bisa menambah kode global yang ingin diekspor jika diperlukan 2. my_fastapi_project/app/api/__init__.py Folder ini berisi modul API. Anda bisa menambah pengaturan impor umum di sini, terutama jika Anda ingin mengelompokkan versi API.
+" />
+<meta property="og:url" content="https://blog.dimasirgiansyah.my.id/posts/jika-kamu-bingung-kok-ada-file-__init__.py-tapi-gak-ada-dicontoh-ini-solusinya/" />
+<meta property="og:site_name" content="Blog Dimas Irgiansyah" />
+
+  <meta property="og:image" content="https://blog.dimasirgiansyah.my.id/og-image.png">
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+  <meta property="article:published_time" content="2024-12-09 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+<div class="container">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Terminal
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+        
+          <li><a href="/about" >About</a></li>
+        
+      
+        
+          <li><a href="/showcase" >Showcase</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="https://blog.dimasirgiansyah.my.id/posts/jika-kamu-bingung-kok-ada-file-__init__.py-tapi-gak-ada-dicontoh-ini-solusinya/">Jika Kamu Bingung Kok Ada File <strong>init</strong>.py tapi gak ada dicontoh, ini solusinya</a>
+  </h1>
+  <div class="post-meta"><time class="post-date">2024-12-09</time></div>
+
+  
+    <span class="post-tags">
+      
+      #<a href="https://blog.dimasirgiansyah.my.id/tags/mitoyus/">mitoyus</a>&nbsp;
+      
+      #<a href="https://blog.dimasirgiansyah.my.id/tags/blog/">blog</a>&nbsp;
+      
+      #<a href="https://blog.dimasirgiansyah.my.id/tags/python/">python</a>&nbsp;
+      
+      #<a href="https://blog.dimasirgiansyah.my.id/tags/indonesia/">indonesia</a>&nbsp;
+      
+      #<a href="https://blog.dimasirgiansyah.my.id/tags/chatgpt/">chatgpt</a>&nbsp;
+      
+      #<a href="https://blog.dimasirgiansyah.my.id/tags/fastapi/">fastapi</a>&nbsp;
+      
+    </span>
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <p>Berikut adalah contoh isi dari file <code>__init__.py</code> yang perlu dimasukkan dalam setiap folder untuk memastikan folder tersebut diperlakukan sebagai paket Python (module), dan memungkinkan Anda untuk mengimpor modul-modul dalam folder tersebut.</p>
+<h3 id="1-my_fastapi_projectapp__init__py">1. <strong><code>my_fastapi_project/app/__init__.py</code></strong><a href="#1-my_fastapi_projectapp__init__py" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>File ini akan menginisialisasi folder <code>app</code> sebagai paket. Biasanya file ini kosong, tetapi kadang bisa berisi pengaturan atau import global.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># app/__init__.py</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Tidak ada yang perlu dimasukkan di sini jika tidak ada pengaturan tambahan</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Tetapi Anda bisa menambah kode global yang ingin diekspor jika diperlukan</span>
+</span></span></code></pre></div><h3 id="2-my_fastapi_projectappapi__init__py">2. <strong><code>my_fastapi_project/app/api/__init__.py</code></strong><a href="#2-my_fastapi_projectappapi__init__py" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>Folder ini berisi modul API. Anda bisa menambah pengaturan impor umum di sini, terutama jika Anda ingin mengelompokkan versi API.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># app/api/__init__.py</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Anda bisa menambah logika untuk import atau pengaturan lainnya di sini</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Untuk sekarang, biarkan kosong jika tidak ada pengaturan tambahan</span>
+</span></span></code></pre></div><h3 id="3-my_fastapi_projectappapiv1__init__py">3. <strong><code>my_fastapi_project/app/api/v1/__init__.py</code></strong><a href="#3-my_fastapi_projectappapiv1__init__py" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>Jika Anda menggunakan versi API, seperti <code>v1</code>, ini adalah tempat yang tepat untuk menginisialisasi folder versi pertama. Biasanya file ini kosong.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># app/api/v1/__init__.py</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Biasanya kosong jika tidak ada pengaturan tambahan</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Atau Anda bisa melakukan impor di sini jika diperlukan, seperti:</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># from .endpoints import user, item</span>
+</span></span></code></pre></div><h3 id="4-my_fastapi_projectappapiv1endpoints__init__py">4. <strong><code>my_fastapi_project/app/api/v1/endpoints/__init__.py</code></strong><a href="#4-my_fastapi_projectappapiv1endpoints__init__py" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>Folder ini berisi endpoint API. Anda bisa menambahkan impor endpoint di sini untuk memudahkan penggunaan.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># app/api/v1/endpoints/__init__.py</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> .user <span style="color:#f92672">import</span> router <span style="color:#66d9ef">as</span> user_router
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> .item <span style="color:#f92672">import</span> router <span style="color:#66d9ef">as</span> item_router
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Mengimpor endpoint lain jika diperlukan</span>
+</span></span></code></pre></div><h3 id="5-my_fastapi_projectappcore__init__py">5. <strong><code>my_fastapi_project/app/core/__init__.py</code></strong><a href="#5-my_fastapi_projectappcore__init__py" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>Folder ini berisi komponen inti aplikasi seperti pengaturan, konfigurasi, dan keamanan. Biasanya file ini kosong, tetapi jika Anda ingin mengelompokkan beberapa logika, Anda bisa melakukannya di sini.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># app/core/__init__.py</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Anda bisa menambahkan pengaturan atau utilitas global di sini jika diperlukan</span>
+</span></span></code></pre></div><h3 id="6-my_fastapi_projectappmodels__init__py">6. <strong><code>my_fastapi_project/app/models/__init__.py</code></strong><a href="#6-my_fastapi_projectappmodels__init__py" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>Folder ini berisi model ORM. Biasanya file ini kosong karena semua model diimpor langsung di dalam file lainnya.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># app/models/__init__.py</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Anda bisa melakukan impor model di sini jika diperlukan</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Misalnya:</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># from .user import User</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># from .item import Item</span>
+</span></span></code></pre></div><h3 id="7-my_fastapi_projectappschemas__init__py">7. <strong><code>my_fastapi_project/app/schemas/__init__.py</code></strong><a href="#7-my_fastapi_projectappschemas__init__py" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>Folder ini berisi schema Pydantic untuk validasi dan serialisasi data. File ini dapat digunakan untuk melakukan impor bersama jika diperlukan.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># app/schemas/__init__.py</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Anda bisa melakukan impor Pydantic schema di sini</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Misalnya:</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># from .user import User, UserCreate</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># from .item import Item, ItemCreate</span>
+</span></span></code></pre></div><h3 id="8-my_fastapi_projectappservices__init__py">8. <strong><code>my_fastapi_project/app/services/__init__.py</code></strong><a href="#8-my_fastapi_projectappservices__init__py" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>Folder ini berisi logika bisnis aplikasi. Sama seperti folder lainnya, file <code>__init__.py</code> dapat diimpor jika Anda ingin mengimpor beberapa layanan.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># app/services/__init__.py</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Biasanya kosong, namun jika ada beberapa pengaturan global atau impor, Anda bisa menambahkannya</span>
+</span></span></code></pre></div><h3 id="9-my_fastapi_projectappdb__init__py">9. <strong><code>my_fastapi_project/app/db/__init__.py</code></strong><a href="#9-my_fastapi_projectappdb__init__py" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>Folder ini berisi kode terkait database (misalnya pengaturan koneksi dan inisialisasi database). Biasanya file ini kosong, tetapi Anda bisa menambahkan pengaturan atau utilitas di sini jika diperlukan.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># app/db/__init__.py</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Biasanya kosong, tetapi bisa berisi impor sesi DB atau utilitas lainnya</span>
+</span></span></code></pre></div><h3 id="10-my_fastapi_projectapputils__init__py">10. <strong><code>my_fastapi_project/app/utils/__init__.py</code></strong><a href="#10-my_fastapi_projectapputils__init__py" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>Folder ini berisi berbagai utilitas yang digunakan di seluruh aplikasi. Anda dapat mengimpor utilitas di sini jika diperlukan.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># app/utils/__init__.py</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Anda bisa mengimpor utilitas atau helper functions di sini</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Misalnya:</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># from .date_utils import current_time</span>
+</span></span></code></pre></div><h3 id="kesimpulan">Kesimpulan<a href="#kesimpulan" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>File <code>__init__.py</code> bertanggung jawab untuk menginisialisasi folder sebagai paket Python, yang memungkinkan Anda mengimpor file atau modul di dalam folder tersebut ke dalam kode Anda. Secara default, file ini biasanya kosong, kecuali jika ada pengaturan atau logika tertentu yang perlu diimpor atau disetel secara global untuk folder tersebut.</p>
+
+      </div></div>
+
+  
+    
+<div class="pagination">
+  <div class="pagination__title">
+    <span class="pagination__title-h">Read other posts</span>
+    <hr />
+  </div>
+  <div class="pagination__buttons">
+    
+      <a href="https://blog.dimasirgiansyah.my.id/posts/contoh-file-dari-rekomendasi-folder-python-fastapi-project/" class="button inline prev">
+        Contoh File Dari Rekomendasi Folder Python FastAPI Project
+      </a>
+    
+    
+      ::
+    
+    
+      <a href="https://blog.dimasirgiansyah.my.id/posts/recommendation-structure-folder-for-a-python-fastapi-projects/" class="button inline next">
+        Recommendation Structure Folder For a Python FastAPI Projects
+      </a>
+    
+  </div>
+</div>
+
+
+  
+
+  
+    
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2024 Powered by <a href="https://gohugo.io">Hugo</a></span>
+    
+      <span>:: <a href="https://github.com/panr/hugo-theme-terminal" target="_blank">Theme</a> made by <a href="https://github.com/panr" target="_blank">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

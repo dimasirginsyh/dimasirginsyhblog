@@ -6,11 +6,11 @@
     <description>Recent content in Tags on Blog Dimas Irgiansyah</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 08 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.dimasirgiansyah.my.id/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 09 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.dimasirgiansyah.my.id/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blog</title>
       <link>https://blog.dimasirgiansyah.my.id/tags/blog/</link>
-      <pubDate>Sun, 08 Dec 2024 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
       
       <guid>https://blog.dimasirgiansyah.my.id/tags/blog/</guid>
       <description></description>
@@ -20,7 +20,7 @@
     <item>
       <title>Chatgpt</title>
       <link>https://blog.dimasirgiansyah.my.id/tags/chatgpt/</link>
-      <pubDate>Sun, 08 Dec 2024 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
       
       <guid>https://blog.dimasirgiansyah.my.id/tags/chatgpt/</guid>
       <description></description>
@@ -30,7 +30,7 @@
     <item>
       <title>English</title>
       <link>https://blog.dimasirgiansyah.my.id/tags/english/</link>
-      <pubDate>Sun, 08 Dec 2024 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
       
       <guid>https://blog.dimasirgiansyah.my.id/tags/english/</guid>
       <description></description>
@@ -38,11 +38,41 @@
     </item>
     
     <item>
+      <title>Fastapi</title>
+      <link>https://blog.dimasirgiansyah.my.id/tags/fastapi/</link>
+      <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.dimasirgiansyah.my.id/tags/fastapi/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Indonesia</title>
+      <link>https://blog.dimasirgiansyah.my.id/tags/indonesia/</link>
+      <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.dimasirgiansyah.my.id/tags/indonesia/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
       <title>Mitoyus</title>
       <link>https://blog.dimasirgiansyah.my.id/tags/mitoyus/</link>
-      <pubDate>Sun, 08 Dec 2024 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
       
       <guid>https://blog.dimasirgiansyah.my.id/tags/mitoyus/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://blog.dimasirgiansyah.my.id/tags/python/</link>
+      <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.dimasirgiansyah.my.id/tags/python/</guid>
       <description></description>
       <content></content>
     </item>
@@ -63,16 +93,6 @@
       <pubDate>Sat, 07 Dec 2024 00:00:00 +0000</pubDate>
       
       <guid>https://blog.dimasirgiansyah.my.id/tags/debian/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>Indonesia</title>
-      <link>https://blog.dimasirgiansyah.my.id/tags/indonesia/</link>
-      <pubDate>Sat, 07 Dec 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.dimasirgiansyah.my.id/tags/indonesia/</guid>
       <description></description>
       <content></content>
     </item>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   
-    <title>Indonesia :: Blog Dimas Irgiansyah</title>
+    <title>Fastapi :: Blog Dimas Irgiansyah</title>
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,7 @@
 
   <meta name="robots" content="noodp" />
 
-<link rel="canonical" href="https://blog.dimasirgiansyah.my.id/tags/indonesia/" />
+<link rel="canonical" href="https://blog.dimasirgiansyah.my.id/tags/fastapi/" />
 
 
 
@@ -80,9 +80,9 @@
 
 <meta property="og:locale" content="en" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Indonesia">
+<meta property="og:title" content="Fastapi">
 <meta property="og:description" content="" />
-<meta property="og:url" content="https://blog.dimasirgiansyah.my.id/tags/indonesia/" />
+<meta property="og:url" content="https://blog.dimasirgiansyah.my.id/tags/fastapi/" />
 <meta property="og:site_name" content="Blog Dimas Irgiansyah" />
 
   <meta property="og:image" content="https://blog.dimasirgiansyah.my.id/og-image.png">
@@ -94,7 +94,7 @@
 
 
 
-  <link href="/tags/indonesia/index.xml" rel="alternate" type="application/rss+xml" title="Blog Dimas Irgiansyah" />
+  <link href="/tags/fastapi/index.xml" rel="alternate" type="application/rss+xml" title="Blog Dimas Irgiansyah" />
 
 
 
@@ -166,7 +166,7 @@
 
   <div class="content">
     
-  <h1>Posts for: #Indonesia</h1>
+  <h1>Posts for: #Fastapi</h1>
   
   <div class="posts">
     
@@ -488,22 +488,24 @@ python-dotenv
     
       <article class="post on-list">
         <h1 class="post-title">
-          <a href="https://blog.dimasirgiansyah.my.id/posts/pengalaman-vps-menggunakan-debian-12/">Pengalaman VPS menggunakan DEBIAN 12</a>
+          <a href="https://blog.dimasirgiansyah.my.id/posts/recommendation-structure-folder-for-a-python-fastapi-projects/">Recommendation Structure Folder For a Python FastAPI Projects</a>
         </h1>
-        <div class="post-meta"><time class="post-date">2024-12-07</time></div>
+        <div class="post-meta"><time class="post-date">2024-12-09</time></div>
 
         
           <span class="post-tags">
-            
-            #<a href="https://blog.dimasirgiansyah.my.id/tags/debian/">debian</a>&nbsp;
             
             #<a href="https://blog.dimasirgiansyah.my.id/tags/mitoyus/">mitoyus</a>&nbsp;
             
             #<a href="https://blog.dimasirgiansyah.my.id/tags/blog/">blog</a>&nbsp;
             
-            #<a href="https://blog.dimasirgiansyah.my.id/tags/rust/">rust</a>&nbsp;
+            #<a href="https://blog.dimasirgiansyah.my.id/tags/python/">python</a>&nbsp;
             
-            #<a href="https://blog.dimasirgiansyah.my.id/tags/indonesia/">indonesia</a>&nbsp;
+            #<a href="https://blog.dimasirgiansyah.my.id/tags/english/">english</a>&nbsp;
+            
+            #<a href="https://blog.dimasirgiansyah.my.id/tags/chatgpt/">chatgpt</a>&nbsp;
+            
+            #<a href="https://blog.dimasirgiansyah.my.id/tags/fastapi/">fastapi</a>&nbsp;
             
           </span>
         
@@ -513,19 +515,70 @@ python-dotenv
 
         <div class="post-content">
           
-            <p>DEBIAN adalah distro yang sungguh popular, tetapi kenapa banyak hal yang cukup berbeda dengan UBUNTU yang merupakan salah satunya. Berikut adalah beberapa hal yang cukup berbeda di DEBIAN 12</p>
-<h4 id="1-install-rust-yang-tidak-lancar">1. Install rust yang tidak lancar</h4>
-<p>Jika anda ingin menginstall rust, tidak cukup dengan perintah</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl --proto <span style="color:#e6db74">&#39;=https&#39;</span> --tlsv1.2 -sSf https://sh.rustup.rs | sh
-</span></span></code></pre></div><p>Anda juga harus menambahkan beberapa installasi yang harus dilakukan seperti</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt install build-essential pkg-config libudev-dev libpq-dev
-</span></span></code></pre></div><p>Setelah install itu semua, saya masih tidak bisa melakukan build release aplikasi rust saya.</p>
+            <p>When structuring a folder for a <strong>Python FastAPI</strong> project, it&rsquo;s essential to maintain modularity and scalability, especially as your project grows. A good folder structure helps to separate concerns, making it easier to manage and maintain the codebase.</p>
+<p>Here&rsquo;s a recommended folder structure for a typical FastAPI project:</p>
+<h3 id="recommended-folder-structure">Recommended Folder Structure</h3>
+<pre tabindex="0"><code>my_fastapi_project/
+│
+├── app/                        # Main application code
+│   ├── __init__.py
+│   ├── main.py                 # Entry point for the FastAPI application
+│   ├── api/                    # API routes and business logic
+│   │   ├── __init__.py
+│   │   ├── v1/                 # Versioned API (optional, but good for future scalability)
+│   │   │   ├── __init__.py
+│   │   │   ├── endpoints/      # Routes for version 1 API
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── user.py     # Example: user-related routes
+│   │   │   │   ├── item.py     # Example: item-related routes
+│   │   ├── v2/                 # (Optional) Future version of the API
+│   │   ├── dependencies.py     # Shared dependencies (e.g., DB session)
+│   ├── core/                   # Core components like settings, config, security
+│   │   ├── __init__.py
+│   │   ├── config.py           # Configuration settings (e.g., environment variables)
+│   │   ├── security.py         # Security-related utilities (e.g., JWT)
+│   │   ├── settings.py         # Settings management (e.g., loading env variables)
+│   ├── models/                 # ORM models or Pydantic schemas
+│   │   ├── __init__.py
+│   │   ├── user.py             # Example: user model
+│   │   ├── item.py             # Example: item model
+│   ├── schemas/                # Pydantic schemas for validation
+│   │   ├── __init__.py
+│   │   ├── user.py             # Example: user schema
+│   │   ├── item.py             # Example: item schema
+│   ├── services/               # Business logic and service layer
+│   │   ├── __init__.py
+│   │   ├── user_service.py     # Example: user service
+│   │   ├── item_service.py     # Example: item service
+│   ├── db/                     # Database-related code (e.g., SQLAlchemy models, migrations)
+│   │   ├── __init__.py
+│   │   ├── session.py          # Database session management
+│   │   ├── init_db.py          # Database initialization code (e.g., creating tables)
+│   ├── tests/                  # Unit and integration tests
+│   │   ├── __init__.py
+│   │   ├── test_user.py        # Example test file for user-related functionality
+│   │   ├── test_item.py        # Example test file for item-related functionality
+│   ├── utils/                  # Utility functions that are used across the app
+│   │   ├── __init__.py
+│   │   ├── date_utils.py       # Example utility: date-related functions
+│
+├── .env                         # Environment variables for sensitive data (e.g., DB URI, API keys)
+├── .gitignore                   # Git ignore file to exclude unnecessary files
+├── requirements.txt             # Project dependencies (including FastAPI and Uvicorn)
+├── alembic.ini                  # Alembic configuration file (if using migrations with SQLAlchemy)
+├── Dockerfile                   # Dockerfile for containerizing the app (optional)
+├── docker-compose.yml           # Docker Compose file for multi-container setup (optional)
+└── README.md                    # Project documentation
+</code></pre><h3 id="explanation-of-the-structure">Explanation of the Structure:</h3>
+<ol>
+<li>
+<p><strong><code>app/</code></strong>: This is where the majority of your code resides. It contains all your app-specific logic and modules.</p>
           
         </div>
 
         
           <div>
-            <a class="read-more button inline" href="/posts/pengalaman-vps-menggunakan-debian-12/">Read more</a>
+            <a class="read-more button inline" href="/posts/recommendation-structure-folder-for-a-python-fastapi-projects/">Read more</a>
           </div>
         
       </article>
