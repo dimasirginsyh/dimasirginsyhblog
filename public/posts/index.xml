@@ -6,7 +6,320 @@
     <description>Recent content in Posts on Blog Dimas Irgiansyah</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 10 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.dimasirgiansyah.my.id/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 12 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.dimasirgiansyah.my.id/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Catatan Belajar C Sharp</title>
+      <link>https://blog.dimasirgiansyah.my.id/posts/catatan-belajar-c-sharp/</link>
+      <pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.dimasirgiansyah.my.id/posts/catatan-belajar-c-sharp/</guid>
+      <description>&lt;h1 id=&#34;menulis-kode-pertama&#34;&gt;Menulis Kode Pertama&lt;/h1&gt;
+&lt;p&gt;Awal mula saya belajar diberi arahan untuk menulis data ke console, dengan 2 metode dan harus menggunakan dua kutip&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-C#&#34; data-lang=&#34;C#&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.WriteLine(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Kalimat Pertama&amp;#34;&lt;/span&gt;); &lt;span style=&#34;color:#75715e&#34;&gt;// Memberi enter diakhir kalimat&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.Write(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Kalimat Kedua&amp;#34;&lt;/span&gt;); &lt;span style=&#34;color:#75715e&#34;&gt;// Tidak ada tambahan enter diakhir kalimat&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;mencetak-nilai-berdasarkan-tipe-data&#34;&gt;Mencetak nilai berdasarkan tipe data&lt;/h1&gt;
+&lt;p&gt;Disini juga menggunakan &lt;code&gt;Write&lt;/code&gt; dan &lt;code&gt;WriteLine&lt;/code&gt; tetapi juga memahami tipe data yang ditampilkan&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Float Type    Precision
+----------------------------
+float         ~6-9 digits
+double        ~15-17 digits
+decimal        28-29 digits
+&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-C#&#34; data-lang=&#34;C#&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.WriteLine(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Output String&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.WriteLine(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;C&amp;#39;&lt;/span&gt;); &lt;span style=&#34;color:#75715e&#34;&gt;// Output char&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.WriteLine(&lt;span style=&#34;color:#ae81ff&#34;&gt;123&lt;/span&gt;); &lt;span style=&#34;color:#75715e&#34;&gt;// Output int&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.WriteLine(&lt;span style=&#34;color:#ae81ff&#34;&gt;0.25F&lt;/span&gt;); &lt;span style=&#34;color:#75715e&#34;&gt;// Output float&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.WriteLine(&lt;span style=&#34;color:#ae81ff&#34;&gt;2.625&lt;/span&gt;); &lt;span style=&#34;color:#75715e&#34;&gt;// Output double&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.WriteLine(&lt;span style=&#34;color:#ae81ff&#34;&gt;12.39816&lt;/span&gt;m); &lt;span style=&#34;color:#75715e&#34;&gt;// Output decimal&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Output Boolean&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.WriteLine(&lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.WriteLine(&lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;deklarasi-variable&#34;&gt;Deklarasi Variable&lt;/h1&gt;
+&lt;p&gt;Macam macam tipe data yang bisa diassign hampir sama seperti bahasa lain, tetapi ada 1 tipe yang kurang familiar bagi saya, yaitu &lt;code&gt;decimal&lt;/code&gt;&lt;/p&gt;</description>
+      <content>&lt;h1 id=&#34;menulis-kode-pertama&#34;&gt;Menulis Kode Pertama&lt;/h1&gt;
+&lt;p&gt;Awal mula saya belajar diberi arahan untuk menulis data ke console, dengan 2 metode dan harus menggunakan dua kutip&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-C#&#34; data-lang=&#34;C#&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.WriteLine(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Kalimat Pertama&amp;#34;&lt;/span&gt;); &lt;span style=&#34;color:#75715e&#34;&gt;// Memberi enter diakhir kalimat&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.Write(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Kalimat Kedua&amp;#34;&lt;/span&gt;); &lt;span style=&#34;color:#75715e&#34;&gt;// Tidak ada tambahan enter diakhir kalimat&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;mencetak-nilai-berdasarkan-tipe-data&#34;&gt;Mencetak nilai berdasarkan tipe data&lt;/h1&gt;
+&lt;p&gt;Disini juga menggunakan &lt;code&gt;Write&lt;/code&gt; dan &lt;code&gt;WriteLine&lt;/code&gt; tetapi juga memahami tipe data yang ditampilkan&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Float Type    Precision
+----------------------------
+float         ~6-9 digits
+double        ~15-17 digits
+decimal        28-29 digits
+&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-C#&#34; data-lang=&#34;C#&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.WriteLine(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Output String&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.WriteLine(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;C&amp;#39;&lt;/span&gt;); &lt;span style=&#34;color:#75715e&#34;&gt;// Output char&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.WriteLine(&lt;span style=&#34;color:#ae81ff&#34;&gt;123&lt;/span&gt;); &lt;span style=&#34;color:#75715e&#34;&gt;// Output int&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.WriteLine(&lt;span style=&#34;color:#ae81ff&#34;&gt;0.25F&lt;/span&gt;); &lt;span style=&#34;color:#75715e&#34;&gt;// Output float&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.WriteLine(&lt;span style=&#34;color:#ae81ff&#34;&gt;2.625&lt;/span&gt;); &lt;span style=&#34;color:#75715e&#34;&gt;// Output double&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.WriteLine(&lt;span style=&#34;color:#ae81ff&#34;&gt;12.39816&lt;/span&gt;m); &lt;span style=&#34;color:#75715e&#34;&gt;// Output decimal&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Output Boolean&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.WriteLine(&lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.WriteLine(&lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;deklarasi-variable&#34;&gt;Deklarasi Variable&lt;/h1&gt;
+&lt;p&gt;Macam macam tipe data yang bisa diassign hampir sama seperti bahasa lain, tetapi ada 1 tipe yang kurang familiar bagi saya, yaitu &lt;code&gt;decimal&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-C#&#34; data-lang=&#34;C#&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt; firstName;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;char&lt;/span&gt; userOption;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; gameScore;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;decimal&lt;/span&gt; particlesPerMillion;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;bool&lt;/span&gt; processedCustomer;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;/*
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	Note:
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	- Variable bisa secara default diinisiasi nilai atau tidak
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	- Variable yang memiliki nilai lalu diinisiasi nilai lagi, maka nilai variable tersebut akan direplace
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;*/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Berikut adalah beberapa pertimbangan penting tentang nama variabel:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Nama variabel dapat berisi karakter alfanumerik dan karakter garis bawah. Karakter khusus seperti simbol hash &lt;code&gt;#&lt;/code&gt; (juga dikenal sebagai simbol angka atau simbol pound) atau simbol dolar &lt;code&gt;$&lt;/code&gt; tidak diperbolehkan.&lt;/li&gt;
+&lt;li&gt;Nama variabel harus dimulai dengan huruf alfabet atau garis bawah, bukan angka.&lt;/li&gt;
+&lt;li&gt;Nama variabel peka huruf besar/kecil, yang berarti bahwa &lt;code&gt;string Value;&lt;/code&gt; dan &lt;code&gt;string value;&lt;/code&gt; merupakan dua variabel yang berbeda.&lt;/li&gt;
+&lt;li&gt;Nama variabel &lt;strong&gt;tidak boleh&lt;/strong&gt; berupa kata kunci C#. Misalnya, Anda tidak dapat menggunakan deklarasi variabel berikut: &lt;code&gt;decimal decimal;&lt;/code&gt; atau &lt;code&gt;string string;&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Berikut adalah beberapa konvensi pengkodian untuk variabel:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Nama variabel harus menggunakan &lt;strong&gt;kata kapital&lt;/strong&gt;, yaitu gaya penulisan yang menggunakan huruf kecil di awal kata pertama dan huruf besar di awal setiap kata berikutnya. Contohnya, &lt;code&gt;string thisIsCamelCase;&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Nama variabel harus dimulai dengan huruf alfabet. Pengembang menggunakan garis bawah untuk tujuan khusus, jadi cobalah untuk tidak menggunakannya untuk saat ini.&lt;/li&gt;
+&lt;li&gt;Nama variabel harus deskriptif dan bermakna di aplikasi Anda. Pilih nama untuk variabel Anda yang mewakili jenis data yang akan ditampungnya.&lt;/li&gt;
+&lt;li&gt;Nama variabel harus berupa satu atau beberapa seluruh kata yang ditambahkan bersama-sama. Jangan gunakan kontraksi atau singkatan karena nama variabel (dan oleh karena itu, tujuannya) mungkin tidak jelas bagi orang lain yang membaca kode Anda.&lt;/li&gt;
+&lt;li&gt;Nama variabel tidak boleh menyertakan jenis data variabel. Anda mungkin melihat beberapa saran untuk menggunakan gaya seperti &lt;code&gt;string strValue;&lt;/code&gt;. Saran tersebut sudah tidak berlaku.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;variable-implisit&#34;&gt;Variable Implisit&lt;/h1&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-C#&#34; data-lang=&#34;C#&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; message = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Halo Bang&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;variable yang menggunakan keyword &lt;code&gt;var&lt;/code&gt; harus diinisiasi&lt;/li&gt;
+&lt;li&gt;variable implisit tetap tidak boleh dirubah tipe datanya&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;format-string&#34;&gt;Format String&lt;/h1&gt;
+&lt;p&gt;Sama seperti bahasa lainnya, string didalam C# bisa enter &lt;code&gt;\n&lt;/code&gt; dan tab &lt;code&gt;\t&lt;/code&gt;. Dan jika ingin menggunakan karakter khusus didalam string bisa memakai backslash &lt;code&gt;\&amp;quot;&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;string-verbatim&#34;&gt;String verbatim&lt;/h2&gt;
+&lt;p&gt;Jika ingin menggunakan karakter khusus tanpa harus menggunakan escape karakter, gunakan keyword &lt;code&gt;@&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;contoh:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-C#&#34; data-lang=&#34;C#&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.WriteLine(&lt;span style=&#34;color:#e6db74&#34;&gt;@&amp;#34; c:\source\repos (this is where your code goes)&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Note Tambahan:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;String di C# bisa menggunakan unicode&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;menggabungkan-string&#34;&gt;Menggabungkan String&lt;/h1&gt;
+&lt;p&gt;Cara menggabungkan string dibahasa ini, hampir mirip seperti bahasa javascript.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-C#&#34; data-lang=&#34;C#&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt; firstName = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Bob&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt; message = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Hello &amp;#34;&lt;/span&gt; + firstName;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.WriteLine(message);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-C#&#34; data-lang=&#34;C#&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt; firstName = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Bob&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt; greeting = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Hello&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt; message = greeting + &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34; &amp;#34;&lt;/span&gt; + firstName + &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;!&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.WriteLine(message);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-C#&#34; data-lang=&#34;C#&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt; firstName = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Bob&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt; greeting = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Hello&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.WriteLine(greeting + &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34; &amp;#34;&lt;/span&gt; + firstName + &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;!&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-C#&#34; data-lang=&#34;C#&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt; message = &lt;span style=&#34;color:#e6db74&#34;&gt;$&amp;#34;{greeting} {firstName}!&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-C#&#34; data-lang=&#34;C#&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt; firstName = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Bob&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt; message = &lt;span style=&#34;color:#e6db74&#34;&gt;$&amp;#34;Hello {firstName}!&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.WriteLine(message);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-C#&#34; data-lang=&#34;C#&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; version = &lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt; updateText = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Update to Windows&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt; message = &lt;span style=&#34;color:#e6db74&#34;&gt;$&amp;#34;{updateText} {version}&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.WriteLine(message);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-C#&#34; data-lang=&#34;C#&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; version = &lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt; updateText = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Update to Windows&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.WriteLine(&lt;span style=&#34;color:#e6db74&#34;&gt;$&amp;#34;{updateText} {version}!&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-C#&#34; data-lang=&#34;C#&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt; projectName = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;First-Project&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.WriteLine(&lt;span style=&#34;color:#e6db74&#34;&gt;$@&amp;#34;C:\Output\{projectName}\Data&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;menggabungkan-string-dengan-numerik&#34;&gt;Menggabungkan String Dengan Numerik&lt;/h1&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-C#&#34; data-lang=&#34;C#&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; firstNumber = &lt;span style=&#34;color:#ae81ff&#34;&gt;12&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; secondNumber = &lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.WriteLine(firstNumber + secondNumber);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt; firstName = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Bob&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; widgetsSold = &lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.WriteLine(firstName + &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34; sold &amp;#34;&lt;/span&gt; + widgetsSold + &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34; widgets.&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt; firstName = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Bob&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; widgetsSold = &lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.WriteLine(firstName + &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34; sold &amp;#34;&lt;/span&gt; + widgetsSold + &lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt; + &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34; widgets.&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt; firstName = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Bob&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; widgetsSold = &lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.WriteLine(firstName + &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34; sold &amp;#34;&lt;/span&gt; + (widgetsSold + &lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt;) + &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34; widgets.&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;operasi-matematika&#34;&gt;Operasi Matematika&lt;/h1&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-C#&#34; data-lang=&#34;C#&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; sum = &lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt; + &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; difference = &lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt; - &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; product = &lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt; * &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; quotient = &lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt; / &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.WriteLine(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Sum: &amp;#34;&lt;/span&gt; + sum);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.WriteLine(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Difference: &amp;#34;&lt;/span&gt; + difference);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.WriteLine(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Product: &amp;#34;&lt;/span&gt; + product);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.WriteLine(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Quotient: &amp;#34;&lt;/span&gt; + quotient);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;pembagian-decimal&#34;&gt;Pembagian decimal&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-C#&#34; data-lang=&#34;C#&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;decimal&lt;/span&gt; decimalQuotient = &lt;span style=&#34;color:#ae81ff&#34;&gt;7.0&lt;/span&gt;m / &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.WriteLine(&lt;span style=&#34;color:#e6db74&#34;&gt;$&amp;#34;Decimal quotient: {decimalQuotient}&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Bentuk pembagian decimal yang berfungsi dengan baik&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-C#&#34; data-lang=&#34;C#&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;decimal&lt;/span&gt; decimalQuotient = &lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt; / &lt;span style=&#34;color:#ae81ff&#34;&gt;5.0&lt;/span&gt;m;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;decimal&lt;/span&gt; decimalQuotient = &lt;span style=&#34;color:#ae81ff&#34;&gt;7.0&lt;/span&gt;m / &lt;span style=&#34;color:#ae81ff&#34;&gt;5.0&lt;/span&gt;m;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Bentuk pembagian yang memberikan hasil tidak akurat&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-C#&#34; data-lang=&#34;C#&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; decimalQuotient = &lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt; / &lt;span style=&#34;color:#ae81ff&#34;&gt;5.0&lt;/span&gt;m;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; decimalQuotient = &lt;span style=&#34;color:#ae81ff&#34;&gt;7.0&lt;/span&gt;m / &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; decimalQuotient = &lt;span style=&#34;color:#ae81ff&#34;&gt;7.0&lt;/span&gt;m / &lt;span style=&#34;color:#ae81ff&#34;&gt;5.0&lt;/span&gt;m;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;decimal&lt;/span&gt; decimalQuotient = &lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt; / &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Konversi int ke decimal untuk keperluan perhitungan&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-C#&#34; data-lang=&#34;C#&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; first = &lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; second = &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;decimal&lt;/span&gt; quotient = (&lt;span style=&#34;color:#66d9ef&#34;&gt;decimal&lt;/span&gt;)first / (&lt;span style=&#34;color:#66d9ef&#34;&gt;decimal&lt;/span&gt;)second;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.WriteLine(quotient);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Modulus&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-C#&#34; data-lang=&#34;C#&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.WriteLine(&lt;span style=&#34;color:#e6db74&#34;&gt;$&amp;#34;Modulus of 200 / 5 : {200 % 5}&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.WriteLine(&lt;span style=&#34;color:#e6db74&#34;&gt;$&amp;#34;Modulus of 7 / 5 : {7 % 5}&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Catatan pengenai urutan matematika dalam &lt;code&gt;C#&lt;/code&gt; sama seperti matematika pada umumnya&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;P&lt;/strong&gt;arentheses (semua yang ada di dalam tanda kurung dilakukan terlebih dahulu)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;E&lt;/strong&gt;xponents&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;M&lt;/strong&gt;ultiplication dan &lt;strong&gt;D&lt;/strong&gt;ivision (dari kiri ke kanan)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;A&lt;/strong&gt;ddition and &lt;strong&gt;S&lt;/strong&gt;ubtraction (dari kiri ke kanan)
+C# mengikuti urutan yang sama seperti PEMDAS kecuali untuk eksponen. Meskipun tidak ada operator eksponen di C#, Anda dapat menggunakan metode .&lt;a href=&#34;https://learn.microsoft.com/id-id/dotnet/api/system.math.pow&#34;&gt;System.Math.Pow&lt;/a&gt; Modul &amp;ldquo;Memanggil metode dari Pustaka Kelas .NET menggunakan C#&amp;rdquo; akan menjelaskan metode ini dan metode lainnya.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-C#&#34; data-lang=&#34;C#&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; value1 = &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; + &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt; * &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; value2 = (&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; + &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;) * &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.WriteLine(value1);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.WriteLine(value2);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;increment-decrement&#34;&gt;Increment Decrement&lt;/h1&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-C#&#34; data-lang=&#34;C#&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;value&lt;/span&gt; = &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;     &lt;span style=&#34;color:#75715e&#34;&gt;// value is now 0.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;value&lt;/span&gt; = &lt;span style=&#34;color:#66d9ef&#34;&gt;value&lt;/span&gt; + &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;; &lt;span style=&#34;color:#75715e&#34;&gt;// value is now 5.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;value&lt;/span&gt; += &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;;        &lt;span style=&#34;color:#75715e&#34;&gt;// value is now 10.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;value&lt;/span&gt; = &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;     &lt;span style=&#34;color:#75715e&#34;&gt;// value is now 0.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;value&lt;/span&gt; = &lt;span style=&#34;color:#66d9ef&#34;&gt;value&lt;/span&gt; + &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;; &lt;span style=&#34;color:#75715e&#34;&gt;// value is now 1.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;value&lt;/span&gt;++;           &lt;span style=&#34;color:#75715e&#34;&gt;// value is now 2.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-C#&#34; data-lang=&#34;C#&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;value&lt;/span&gt; = &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;value&lt;/span&gt; = &lt;span style=&#34;color:#66d9ef&#34;&gt;value&lt;/span&gt; + &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.WriteLine(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;First increment: &amp;#34;&lt;/span&gt; + &lt;span style=&#34;color:#66d9ef&#34;&gt;value&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;value&lt;/span&gt; += &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.WriteLine(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Second increment: &amp;#34;&lt;/span&gt; + &lt;span style=&#34;color:#66d9ef&#34;&gt;value&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;value&lt;/span&gt;++;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.WriteLine(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Third increment: &amp;#34;&lt;/span&gt; + &lt;span style=&#34;color:#66d9ef&#34;&gt;value&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;value&lt;/span&gt; = &lt;span style=&#34;color:#66d9ef&#34;&gt;value&lt;/span&gt; - &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.WriteLine(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;First decrement: &amp;#34;&lt;/span&gt; + &lt;span style=&#34;color:#66d9ef&#34;&gt;value&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;value&lt;/span&gt; -= &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.WriteLine(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Second decrement: &amp;#34;&lt;/span&gt; + &lt;span style=&#34;color:#66d9ef&#34;&gt;value&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;value&lt;/span&gt;--;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.WriteLine(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Third decrement: &amp;#34;&lt;/span&gt; + &lt;span style=&#34;color:#66d9ef&#34;&gt;value&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Perbedaan increment didepan dan dibelakang, adalah nilai yang dihasilkan pada baris tersebut&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-C#&#34; data-lang=&#34;C#&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;value&lt;/span&gt; = &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;value&lt;/span&gt;++;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.WriteLine(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;First: &amp;#34;&lt;/span&gt; + &lt;span style=&#34;color:#66d9ef&#34;&gt;value&lt;/span&gt;); &lt;span style=&#34;color:#75715e&#34;&gt;// 2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.WriteLine(&lt;span style=&#34;color:#e6db74&#34;&gt;$&amp;#34;Second: {value++}&amp;#34;&lt;/span&gt;); &lt;span style=&#34;color:#75715e&#34;&gt;// 2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.WriteLine(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Third: &amp;#34;&lt;/span&gt; + &lt;span style=&#34;color:#66d9ef&#34;&gt;value&lt;/span&gt;); &lt;span style=&#34;color:#75715e&#34;&gt;// 3&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.WriteLine(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Fourth: &amp;#34;&lt;/span&gt; + (++&lt;span style=&#34;color:#66d9ef&#34;&gt;value&lt;/span&gt;)); &lt;span style=&#34;color:#75715e&#34;&gt;// 4&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Pelajaran mengenai perhitungan matematika didalam &lt;code&gt;C#&lt;/code&gt;, jika terdapat pecahan yang menggunakan &lt;code&gt;/&lt;/code&gt; maka harus dimasukkan kedalam kurung &lt;code&gt;()&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-C#&#34; data-lang=&#34;C#&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; fahrenheit = &lt;span style=&#34;color:#ae81ff&#34;&gt;94&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;decimal&lt;/span&gt; celcius = (fahrenheit - &lt;span style=&#34;color:#ae81ff&#34;&gt;32&lt;/span&gt;m) * &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;m / &lt;span style=&#34;color:#ae81ff&#34;&gt;9&lt;/span&gt;m;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.WriteLine(&lt;span style=&#34;color:#e6db74&#34;&gt;$&amp;#34;The temperature is {celcius} Celsius.&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Output: The temperature is 34.444444444444444444444444444 Celsius.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; fahrenheitA = &lt;span style=&#34;color:#ae81ff&#34;&gt;94&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;decimal&lt;/span&gt; celsiusA = (fahrenheitA - &lt;span style=&#34;color:#ae81ff&#34;&gt;32&lt;/span&gt;m) * (&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;m / &lt;span style=&#34;color:#ae81ff&#34;&gt;9&lt;/span&gt;m);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Console.WriteLine(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;The temperature is &amp;#34;&lt;/span&gt; + celsiusA + &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34; Celsius.&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Output: The temperature is 34.444444444444444444444444447 Celsius.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
+    </item>
+    
+    <item>
+      <title>Bagaimana cara membuat token solana didevnet</title>
+      <link>https://blog.dimasirgiansyah.my.id/posts/bagaimana-cara-membuat-token-solana-didevnet/</link>
+      <pubDate>Wed, 11 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.dimasirgiansyah.my.id/posts/bagaimana-cara-membuat-token-solana-didevnet/</guid>
+      <description>&lt;p&gt;Untuk membuat token di jaringan &lt;strong&gt;Devnet&lt;/strong&gt; Solana, Anda bisa mengikuti langkah-langkah berikut. Ini akan melibatkan penggunaan &lt;strong&gt;Solana CLI&lt;/strong&gt; dan &lt;strong&gt;Token Program&lt;/strong&gt; untuk membuat token yang akan dipublish di &lt;strong&gt;Devnet&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;langkah-langkah-untuk-membuat-token-solana-di-devnet&#34;&gt;Langkah-langkah untuk Membuat Token Solana di Devnet:&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Pasang Solana CLI&lt;/strong&gt;: Jika Anda belum menginstal Solana CLI, ikuti langkah-langkah berikut:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Buka terminal dan unduh Solana CLI dengan perintah:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sh -c &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;curl -sSfL https://release.solana.com/stable/install&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Verifikasi instalasi dengan perintah:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;solana --version
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Setel Jaringan ke Devnet&lt;/strong&gt;: Setelah Solana CLI terinstal, pastikan Anda menggunakan jaringan &lt;strong&gt;Devnet&lt;/strong&gt;. Jalankan perintah berikut untuk mengatur Solana ke Devnet:&lt;/p&gt;</description>
+      <content>&lt;p&gt;Untuk membuat token di jaringan &lt;strong&gt;Devnet&lt;/strong&gt; Solana, Anda bisa mengikuti langkah-langkah berikut. Ini akan melibatkan penggunaan &lt;strong&gt;Solana CLI&lt;/strong&gt; dan &lt;strong&gt;Token Program&lt;/strong&gt; untuk membuat token yang akan dipublish di &lt;strong&gt;Devnet&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;langkah-langkah-untuk-membuat-token-solana-di-devnet&#34;&gt;Langkah-langkah untuk Membuat Token Solana di Devnet:&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Pasang Solana CLI&lt;/strong&gt;: Jika Anda belum menginstal Solana CLI, ikuti langkah-langkah berikut:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Buka terminal dan unduh Solana CLI dengan perintah:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sh -c &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;curl -sSfL https://release.solana.com/stable/install&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Verifikasi instalasi dengan perintah:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;solana --version
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Setel Jaringan ke Devnet&lt;/strong&gt;: Setelah Solana CLI terinstal, pastikan Anda menggunakan jaringan &lt;strong&gt;Devnet&lt;/strong&gt;. Jalankan perintah berikut untuk mengatur Solana ke Devnet:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;solana config set --url devnet
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Buat Wallet&lt;/strong&gt;: Jika Anda belum memiliki wallet, Anda bisa membuatnya dengan perintah berikut:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;solana-keygen new --outfile ~/my-wallet.json
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Ini akan menghasilkan file kunci privat yang bisa digunakan untuk berinteraksi dengan blockchain Solana.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Akses Saldo Devnet&lt;/strong&gt;: Anda bisa mendapatkan &lt;strong&gt;SOL&lt;/strong&gt; (Solana) gratis di Devnet dengan meminta faucet. Gunakan perintah berikut untuk menerima beberapa SOL ke akun Anda:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;solana airdrop &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Ini akan memberikan 2 SOL gratis ke dompet Anda di Devnet.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Instal SPL Token CLI&lt;/strong&gt;: Token Solana dikelola oleh SPL Token Program, jadi Anda perlu menginstal SPL Token CLI untuk membuat dan mengelola token Anda:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cargo install spl-token-cli
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Membuat Token Baru&lt;/strong&gt;: Setelah SPL Token CLI terinstal, Anda dapat membuat token baru dengan perintah berikut:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;spl-token create-token
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Ini akan menghasilkan alamat token untuk token yang baru Anda buat.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Membuat Akun untuk Token&lt;/strong&gt;: Setelah membuat token, Anda perlu membuat akun untuk menyimpan token tersebut di wallet Anda:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;spl-token create-account &amp;lt;TOKEN_ADDRESS&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Gantilah &lt;code&gt;&amp;lt;TOKEN_ADDRESS&amp;gt;&lt;/code&gt; dengan alamat token yang baru Anda buat.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Mint Token ke Akun Anda&lt;/strong&gt;: Setelah akun siap, Anda dapat melakukan minting sejumlah token ke akun Anda dengan perintah:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;spl-token mint &amp;lt;TOKEN_ADDRESS&amp;gt; &amp;lt;JUMLAH&amp;gt; &amp;lt;AKUN_ALAMAT&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Gantilah &lt;code&gt;&amp;lt;TOKEN_ADDRESS&amp;gt;&lt;/code&gt; dengan alamat token yang Anda buat, &lt;code&gt;&amp;lt;JUMLAH&amp;gt;&lt;/code&gt; dengan jumlah token yang ingin Anda mint, dan &lt;code&gt;&amp;lt;AKUN_ALAMAT&amp;gt;&lt;/code&gt; dengan alamat akun yang telah dibuat sebelumnya.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Verifikasi Token&lt;/strong&gt;: Untuk memverifikasi apakah token berhasil dimintakan, Anda bisa menjalankan perintah:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;spl-token accounts
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Perintah ini akan menampilkan semua akun yang memegang token dan saldo mereka.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;catatan&#34;&gt;Catatan:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Devnet&lt;/strong&gt; adalah jaringan pengujian (testnet), jadi token yang Anda buat tidak akan memiliki nilai nyata di dunia luar.&lt;/li&gt;
+&lt;li&gt;Pastikan Anda menggunakan token di jaringan yang benar (seperti Devnet) saat pengujian dan percakapan.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Dengan mengikuti langkah-langkah di atas, Anda dapat membuat dan mengelola token Solana di Devnet untuk keperluan pengujian atau eksperimen.&lt;/p&gt;
+</content>
+    </item>
+    
     <item>
       <title>jika saya ingin membuat koin crypto saya sendiri, lebih baik menggunakan binance atau solana?</title>
       <link>https://blog.dimasirgiansyah.my.id/posts/jika-saya-ingin-membuat-koin-crypto-saya-sendiri-lebih-baik-menggunakan-binance-atau-solana/</link>

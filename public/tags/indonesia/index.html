@@ -172,6 +172,124 @@
     
       <article class="post on-list">
         <h1 class="post-title">
+          <a href="https://blog.dimasirgiansyah.my.id/posts/catatan-belajar-c-sharp/">Catatan Belajar C Sharp</a>
+        </h1>
+        <div class="post-meta"><time class="post-date">2024-12-12</time><span class="post-author">Dimas Irgiansyah</span></div>
+
+        
+          <span class="post-tags">
+            
+            #<a href="https://blog.dimasirgiansyah.my.id/tags/mitoyus/">mitoyus</a>&nbsp;
+            
+            #<a href="https://blog.dimasirgiansyah.my.id/tags/blog/">blog</a>&nbsp;
+            
+            #<a href="https://blog.dimasirgiansyah.my.id/tags/indonesia/">indonesia</a>&nbsp;
+            
+            #<a href="https://blog.dimasirgiansyah.my.id/tags/csharp/">csharp</a>&nbsp;
+            
+            #<a href="https://blog.dimasirgiansyah.my.id/tags/microsoft/">microsoft</a>&nbsp;
+            
+          </span>
+        
+
+        
+
+
+        <div class="post-content">
+          
+            <h1 id="menulis-kode-pertama">Menulis Kode Pertama</h1>
+<p>Awal mula saya belajar diberi arahan untuk menulis data ke console, dengan 2 metode dan harus menggunakan dua kutip</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C#" data-lang="C#"><span style="display:flex;"><span>Console.WriteLine(<span style="color:#e6db74">&#34;Kalimat Pertama&#34;</span>); <span style="color:#75715e">// Memberi enter diakhir kalimat</span>
+</span></span><span style="display:flex;"><span>Console.Write(<span style="color:#e6db74">&#34;Kalimat Kedua&#34;</span>); <span style="color:#75715e">// Tidak ada tambahan enter diakhir kalimat</span>
+</span></span></code></pre></div><h1 id="mencetak-nilai-berdasarkan-tipe-data">Mencetak nilai berdasarkan tipe data</h1>
+<p>Disini juga menggunakan <code>Write</code> dan <code>WriteLine</code> tetapi juga memahami tipe data yang ditampilkan</p>
+<pre tabindex="0"><code>Float Type    Precision
+----------------------------
+float         ~6-9 digits
+double        ~15-17 digits
+decimal        28-29 digits
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C#" data-lang="C#"><span style="display:flex;"><span>Console.WriteLine(<span style="color:#e6db74">&#34;Output String&#34;</span>);
+</span></span><span style="display:flex;"><span>Console.WriteLine(<span style="color:#e6db74">&#39;C&#39;</span>); <span style="color:#75715e">// Output char</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Console.WriteLine(<span style="color:#ae81ff">123</span>); <span style="color:#75715e">// Output int</span>
+</span></span><span style="display:flex;"><span>Console.WriteLine(<span style="color:#ae81ff">0.25F</span>); <span style="color:#75715e">// Output float</span>
+</span></span><span style="display:flex;"><span>Console.WriteLine(<span style="color:#ae81ff">2.625</span>); <span style="color:#75715e">// Output double</span>
+</span></span><span style="display:flex;"><span>Console.WriteLine(<span style="color:#ae81ff">12.39816</span>m); <span style="color:#75715e">// Output decimal</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Output Boolean</span>
+</span></span><span style="display:flex;"><span>Console.WriteLine(<span style="color:#66d9ef">true</span>);
+</span></span><span style="display:flex;"><span>Console.WriteLine(<span style="color:#66d9ef">false</span>);
+</span></span></code></pre></div><h1 id="deklarasi-variable">Deklarasi Variable</h1>
+<p>Macam macam tipe data yang bisa diassign hampir sama seperti bahasa lain, tetapi ada 1 tipe yang kurang familiar bagi saya, yaitu <code>decimal</code></p>
+          
+        </div>
+
+        
+          <div>
+            <a class="read-more button inline" href="/posts/catatan-belajar-c-sharp/">Read more</a>
+          </div>
+        
+      </article>
+    
+      <article class="post on-list">
+        <h1 class="post-title">
+          <a href="https://blog.dimasirgiansyah.my.id/posts/bagaimana-cara-membuat-token-solana-didevnet/">Bagaimana cara membuat token solana didevnet</a>
+        </h1>
+        <div class="post-meta"><time class="post-date">2024-12-11</time><span class="post-author">Dimas Irgiansyah</span></div>
+
+        
+          <span class="post-tags">
+            
+            #<a href="https://blog.dimasirgiansyah.my.id/tags/mitoyus/">mitoyus</a>&nbsp;
+            
+            #<a href="https://blog.dimasirgiansyah.my.id/tags/blog/">blog</a>&nbsp;
+            
+            #<a href="https://blog.dimasirgiansyah.my.id/tags/solana/">solana</a>&nbsp;
+            
+            #<a href="https://blog.dimasirgiansyah.my.id/tags/indonesia/">indonesia</a>&nbsp;
+            
+            #<a href="https://blog.dimasirgiansyah.my.id/tags/chatgpt/">chatgpt</a>&nbsp;
+            
+            #<a href="https://blog.dimasirgiansyah.my.id/tags/crypto/">crypto</a>&nbsp;
+            
+          </span>
+        
+
+        
+
+
+        <div class="post-content">
+          
+            <p>Untuk membuat token di jaringan <strong>Devnet</strong> Solana, Anda bisa mengikuti langkah-langkah berikut. Ini akan melibatkan penggunaan <strong>Solana CLI</strong> dan <strong>Token Program</strong> untuk membuat token yang akan dipublish di <strong>Devnet</strong>.</p>
+<h3 id="langkah-langkah-untuk-membuat-token-solana-di-devnet">Langkah-langkah untuk Membuat Token Solana di Devnet:</h3>
+<ol>
+<li>
+<p><strong>Pasang Solana CLI</strong>: Jika Anda belum menginstal Solana CLI, ikuti langkah-langkah berikut:</p>
+<ul>
+<li>
+<p>Buka terminal dan unduh Solana CLI dengan perintah:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sh -c <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>curl -sSfL https://release.solana.com/stable/install<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
+</span></span></code></pre></div></li>
+<li>
+<p>Verifikasi instalasi dengan perintah:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>solana --version
+</span></span></code></pre></div></li>
+</ul>
+</li>
+<li>
+<p><strong>Setel Jaringan ke Devnet</strong>: Setelah Solana CLI terinstal, pastikan Anda menggunakan jaringan <strong>Devnet</strong>. Jalankan perintah berikut untuk mengatur Solana ke Devnet:</p>
+          
+        </div>
+
+        
+          <div>
+            <a class="read-more button inline" href="/posts/bagaimana-cara-membuat-token-solana-didevnet/">Read more</a>
+          </div>
+        
+      </article>
+    
+      <article class="post on-list">
+        <h1 class="post-title">
           <a href="https://blog.dimasirgiansyah.my.id/posts/jika-saya-ingin-membuat-koin-crypto-saya-sendiri-lebih-baik-menggunakan-binance-atau-solana/">jika saya ingin membuat koin crypto saya sendiri, lebih baik menggunakan binance atau solana?</a>
         </h1>
         <div class="post-meta"><time class="post-date">2024-12-10</time><span class="post-author">Dimas Irgiansyah</span></div>
