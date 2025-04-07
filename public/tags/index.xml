@@ -4,198 +4,163 @@
     <title>Tags on Blog Dimas Irgiansyah</title>
     <link>https://blog.dimasirgiansyah.my.id/tags/</link>
     <description>Recent content in Tags on Blog Dimas Irgiansyah</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 12 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.dimasirgiansyah.my.id/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blog.dimasirgiansyah.my.id/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blog</title>
       <link>https://blog.dimasirgiansyah.my.id/tags/blog/</link>
-      <pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://blog.dimasirgiansyah.my.id/tags/blog/</guid>
       <description></description>
-      <content></content>
     </item>
-    
     <item>
-      <title>Csharp</title>
-      <link>https://blog.dimasirgiansyah.my.id/tags/csharp/</link>
-      <pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.dimasirgiansyah.my.id/tags/csharp/</guid>
+      <title>Cheatsheet</title>
+      <link>https://blog.dimasirgiansyah.my.id/tags/cheatsheet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blog.dimasirgiansyah.my.id/tags/cheatsheet/</guid>
       <description></description>
-      <content></content>
     </item>
-    
     <item>
-      <title>Indonesia</title>
-      <link>https://blog.dimasirgiansyah.my.id/tags/indonesia/</link>
-      <pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.dimasirgiansyah.my.id/tags/indonesia/</guid>
+      <title>Pemrograman</title>
+      <link>https://blog.dimasirgiansyah.my.id/tags/pemrograman/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blog.dimasirgiansyah.my.id/tags/pemrograman/</guid>
       <description></description>
-      <content></content>
     </item>
-    
-    <item>
-      <title>Microsoft</title>
-      <link>https://blog.dimasirgiansyah.my.id/tags/microsoft/</link>
-      <pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.dimasirgiansyah.my.id/tags/microsoft/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>Mitoyus</title>
-      <link>https://blog.dimasirgiansyah.my.id/tags/mitoyus/</link>
-      <pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.dimasirgiansyah.my.id/tags/mitoyus/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>Chatgpt</title>
-      <link>https://blog.dimasirgiansyah.my.id/tags/chatgpt/</link>
-      <pubDate>Wed, 11 Dec 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.dimasirgiansyah.my.id/tags/chatgpt/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>Crypto</title>
-      <link>https://blog.dimasirgiansyah.my.id/tags/crypto/</link>
-      <pubDate>Wed, 11 Dec 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.dimasirgiansyah.my.id/tags/crypto/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>Solana</title>
-      <link>https://blog.dimasirgiansyah.my.id/tags/solana/</link>
-      <pubDate>Wed, 11 Dec 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.dimasirgiansyah.my.id/tags/solana/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>Binance</title>
-      <link>https://blog.dimasirgiansyah.my.id/tags/binance/</link>
-      <pubDate>Tue, 10 Dec 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.dimasirgiansyah.my.id/tags/binance/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>English</title>
-      <link>https://blog.dimasirgiansyah.my.id/tags/english/</link>
-      <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.dimasirgiansyah.my.id/tags/english/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>Fastapi</title>
-      <link>https://blog.dimasirgiansyah.my.id/tags/fastapi/</link>
-      <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.dimasirgiansyah.my.id/tags/fastapi/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
     <item>
       <title>Python</title>
       <link>https://blog.dimasirgiansyah.my.id/tags/python/</link>
-      <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://blog.dimasirgiansyah.my.id/tags/python/</guid>
       <description></description>
-      <content></content>
     </item>
-    
+    <item>
+      <title>Chatgpt</title>
+      <link>https://blog.dimasirgiansyah.my.id/tags/chatgpt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blog.dimasirgiansyah.my.id/tags/chatgpt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dataminer</title>
+      <link>https://blog.dimasirgiansyah.my.id/tags/dataminer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blog.dimasirgiansyah.my.id/tags/dataminer/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Indonesia</title>
+      <link>https://blog.dimasirgiansyah.my.id/tags/indonesia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blog.dimasirgiansyah.my.id/tags/indonesia/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mitoyus</title>
+      <link>https://blog.dimasirgiansyah.my.id/tags/mitoyus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blog.dimasirgiansyah.my.id/tags/mitoyus/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Csharp</title>
+      <link>https://blog.dimasirgiansyah.my.id/tags/csharp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blog.dimasirgiansyah.my.id/tags/csharp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Microsoft</title>
+      <link>https://blog.dimasirgiansyah.my.id/tags/microsoft/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blog.dimasirgiansyah.my.id/tags/microsoft/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Crypto</title>
+      <link>https://blog.dimasirgiansyah.my.id/tags/crypto/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blog.dimasirgiansyah.my.id/tags/crypto/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Solana</title>
+      <link>https://blog.dimasirgiansyah.my.id/tags/solana/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blog.dimasirgiansyah.my.id/tags/solana/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Binance</title>
+      <link>https://blog.dimasirgiansyah.my.id/tags/binance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blog.dimasirgiansyah.my.id/tags/binance/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>English</title>
+      <link>https://blog.dimasirgiansyah.my.id/tags/english/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blog.dimasirgiansyah.my.id/tags/english/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fastapi</title>
+      <link>https://blog.dimasirgiansyah.my.id/tags/fastapi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blog.dimasirgiansyah.my.id/tags/fastapi/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Nginx</title>
       <link>https://blog.dimasirgiansyah.my.id/tags/nginx/</link>
-      <pubDate>Sun, 08 Dec 2024 00:00:00 +0000</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://blog.dimasirgiansyah.my.id/tags/nginx/</guid>
       <description></description>
-      <content></content>
     </item>
-    
     <item>
       <title>Debian</title>
       <link>https://blog.dimasirgiansyah.my.id/tags/debian/</link>
-      <pubDate>Sat, 07 Dec 2024 00:00:00 +0000</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://blog.dimasirgiansyah.my.id/tags/debian/</guid>
       <description></description>
-      <content></content>
     </item>
-    
     <item>
       <title>Rust</title>
       <link>https://blog.dimasirgiansyah.my.id/tags/rust/</link>
-      <pubDate>Sat, 07 Dec 2024 00:00:00 +0000</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://blog.dimasirgiansyah.my.id/tags/rust/</guid>
       <description></description>
-      <content></content>
     </item>
-    
     <item>
       <title>Cloudflare</title>
       <link>https://blog.dimasirgiansyah.my.id/tags/cloudflare/</link>
-      <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://blog.dimasirgiansyah.my.id/tags/cloudflare/</guid>
       <description></description>
-      <content></content>
     </item>
-    
     <item>
       <title>Github</title>
       <link>https://blog.dimasirgiansyah.my.id/tags/github/</link>
-      <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://blog.dimasirgiansyah.my.id/tags/github/</guid>
       <description></description>
-      <content></content>
     </item>
-    
     <item>
       <title>Go</title>
       <link>https://blog.dimasirgiansyah.my.id/tags/go/</link>
-      <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://blog.dimasirgiansyah.my.id/tags/go/</guid>
       <description></description>
-      <content></content>
     </item>
-    
     <item>
       <title>Telegram</title>
       <link>https://blog.dimasirgiansyah.my.id/tags/telegram/</link>
-      <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://blog.dimasirgiansyah.my.id/tags/telegram/</guid>
       <description></description>
-      <content></content>
     </item>
-    
   </channel>
 </rss>

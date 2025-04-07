@@ -4,206 +4,23 @@
     <title>Crypto on Blog Dimas Irgiansyah</title>
     <link>https://blog.dimasirgiansyah.my.id/tags/crypto/</link>
     <description>Recent content in Crypto on Blog Dimas Irgiansyah</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 11 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.dimasirgiansyah.my.id/tags/crypto/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 11 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blog.dimasirgiansyah.my.id/tags/crypto/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bagaimana cara membuat token solana didevnet</title>
       <link>https://blog.dimasirgiansyah.my.id/posts/bagaimana-cara-membuat-token-solana-didevnet/</link>
       <pubDate>Wed, 11 Dec 2024 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.dimasirgiansyah.my.id/posts/bagaimana-cara-membuat-token-solana-didevnet/</guid>
-      <description>&lt;p&gt;Untuk membuat token di jaringan &lt;strong&gt;Devnet&lt;/strong&gt; Solana, Anda bisa mengikuti langkah-langkah berikut. Ini akan melibatkan penggunaan &lt;strong&gt;Solana CLI&lt;/strong&gt; dan &lt;strong&gt;Token Program&lt;/strong&gt; untuk membuat token yang akan dipublish di &lt;strong&gt;Devnet&lt;/strong&gt;.&lt;/p&gt;
-&lt;h3 id=&#34;langkah-langkah-untuk-membuat-token-solana-di-devnet&#34;&gt;Langkah-langkah untuk Membuat Token Solana di Devnet:&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Pasang Solana CLI&lt;/strong&gt;: Jika Anda belum menginstal Solana CLI, ikuti langkah-langkah berikut:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Buka terminal dan unduh Solana CLI dengan perintah:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sh -c &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;curl -sSfL https://release.solana.com/stable/install&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Verifikasi instalasi dengan perintah:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;solana --version
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Setel Jaringan ke Devnet&lt;/strong&gt;: Setelah Solana CLI terinstal, pastikan Anda menggunakan jaringan &lt;strong&gt;Devnet&lt;/strong&gt;. Jalankan perintah berikut untuk mengatur Solana ke Devnet:&lt;/p&gt;</description>
-      <content>&lt;p&gt;Untuk membuat token di jaringan &lt;strong&gt;Devnet&lt;/strong&gt; Solana, Anda bisa mengikuti langkah-langkah berikut. Ini akan melibatkan penggunaan &lt;strong&gt;Solana CLI&lt;/strong&gt; dan &lt;strong&gt;Token Program&lt;/strong&gt; untuk membuat token yang akan dipublish di &lt;strong&gt;Devnet&lt;/strong&gt;.&lt;/p&gt;
-&lt;h3 id=&#34;langkah-langkah-untuk-membuat-token-solana-di-devnet&#34;&gt;Langkah-langkah untuk Membuat Token Solana di Devnet:&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Pasang Solana CLI&lt;/strong&gt;: Jika Anda belum menginstal Solana CLI, ikuti langkah-langkah berikut:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Buka terminal dan unduh Solana CLI dengan perintah:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sh -c &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;curl -sSfL https://release.solana.com/stable/install&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Verifikasi instalasi dengan perintah:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;solana --version
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Setel Jaringan ke Devnet&lt;/strong&gt;: Setelah Solana CLI terinstal, pastikan Anda menggunakan jaringan &lt;strong&gt;Devnet&lt;/strong&gt;. Jalankan perintah berikut untuk mengatur Solana ke Devnet:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;solana config set --url devnet
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Buat Wallet&lt;/strong&gt;: Jika Anda belum memiliki wallet, Anda bisa membuatnya dengan perintah berikut:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;solana-keygen new --outfile ~/my-wallet.json
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Ini akan menghasilkan file kunci privat yang bisa digunakan untuk berinteraksi dengan blockchain Solana.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Akses Saldo Devnet&lt;/strong&gt;: Anda bisa mendapatkan &lt;strong&gt;SOL&lt;/strong&gt; (Solana) gratis di Devnet dengan meminta faucet. Gunakan perintah berikut untuk menerima beberapa SOL ke akun Anda:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;solana airdrop &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Ini akan memberikan 2 SOL gratis ke dompet Anda di Devnet.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Instal SPL Token CLI&lt;/strong&gt;: Token Solana dikelola oleh SPL Token Program, jadi Anda perlu menginstal SPL Token CLI untuk membuat dan mengelola token Anda:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cargo install spl-token-cli
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Membuat Token Baru&lt;/strong&gt;: Setelah SPL Token CLI terinstal, Anda dapat membuat token baru dengan perintah berikut:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;spl-token create-token
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Ini akan menghasilkan alamat token untuk token yang baru Anda buat.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Membuat Akun untuk Token&lt;/strong&gt;: Setelah membuat token, Anda perlu membuat akun untuk menyimpan token tersebut di wallet Anda:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;spl-token create-account &amp;lt;TOKEN_ADDRESS&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Gantilah &lt;code&gt;&amp;lt;TOKEN_ADDRESS&amp;gt;&lt;/code&gt; dengan alamat token yang baru Anda buat.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Mint Token ke Akun Anda&lt;/strong&gt;: Setelah akun siap, Anda dapat melakukan minting sejumlah token ke akun Anda dengan perintah:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;spl-token mint &amp;lt;TOKEN_ADDRESS&amp;gt; &amp;lt;JUMLAH&amp;gt; &amp;lt;AKUN_ALAMAT&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Gantilah &lt;code&gt;&amp;lt;TOKEN_ADDRESS&amp;gt;&lt;/code&gt; dengan alamat token yang Anda buat, &lt;code&gt;&amp;lt;JUMLAH&amp;gt;&lt;/code&gt; dengan jumlah token yang ingin Anda mint, dan &lt;code&gt;&amp;lt;AKUN_ALAMAT&amp;gt;&lt;/code&gt; dengan alamat akun yang telah dibuat sebelumnya.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Verifikasi Token&lt;/strong&gt;: Untuk memverifikasi apakah token berhasil dimintakan, Anda bisa menjalankan perintah:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;spl-token accounts
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Perintah ini akan menampilkan semua akun yang memegang token dan saldo mereka.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;catatan&#34;&gt;Catatan:&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Devnet&lt;/strong&gt; adalah jaringan pengujian (testnet), jadi token yang Anda buat tidak akan memiliki nilai nyata di dunia luar.&lt;/li&gt;
-&lt;li&gt;Pastikan Anda menggunakan token di jaringan yang benar (seperti Devnet) saat pengujian dan percakapan.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Dengan mengikuti langkah-langkah di atas, Anda dapat membuat dan mengelola token Solana di Devnet untuk keperluan pengujian atau eksperimen.&lt;/p&gt;
-</content>
+      <description>Untuk membuat token di jaringan Devnet Solana, Anda bisa mengikuti langkah-langkah berikut. Ini akan melibatkan penggunaan Solana CLI dan Token Program untuk membuat token yang akan dipublish di Devnet.&#xA;Langkah-langkah untuk Membuat Token Solana di Devnet: Pasang Solana CLI: Jika Anda belum menginstal Solana CLI, ikuti langkah-langkah berikut:&#xA;Buka terminal dan unduh Solana CLI dengan perintah:&#xA;sh -c &amp;#34;$(curl -sSfL https://release.solana.com/stable/install)&amp;#34; Verifikasi instalasi dengan perintah:&#xA;solana --version Setel Jaringan ke Devnet: Setelah Solana CLI terinstal, pastikan Anda menggunakan jaringan Devnet.</description>
     </item>
-    
     <item>
       <title>jika saya ingin membuat koin crypto saya sendiri, lebih baik menggunakan binance atau solana?</title>
       <link>https://blog.dimasirgiansyah.my.id/posts/jika-saya-ingin-membuat-koin-crypto-saya-sendiri-lebih-baik-menggunakan-binance-atau-solana/</link>
       <pubDate>Tue, 10 Dec 2024 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.dimasirgiansyah.my.id/posts/jika-saya-ingin-membuat-koin-crypto-saya-sendiri-lebih-baik-menggunakan-binance-atau-solana/</guid>
-      <description>&lt;p&gt;Membuat koin kripto Anda sendiri membutuhkan pertimbangan matang tentang berbagai aspek teknis, tujuan proyek, dan ekosistem yang ingin Anda bangun. Binance Smart Chain (BSC) dan Solana adalah dua platform blockchain yang populer untuk membuat koin kripto, tetapi masing-masing memiliki kelebihan dan kekurangan tergantung pada kebutuhan Anda.&lt;/p&gt;
-&lt;p&gt;Berikut adalah beberapa faktor yang perlu dipertimbangkan untuk memilih antara Binance Smart Chain (BSC) dan Solana:&lt;/p&gt;
-&lt;h3 id=&#34;1-kecepatan-dan-biaya-transaksi&#34;&gt;1. &lt;strong&gt;Kecepatan dan Biaya Transaksi&lt;/strong&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Binance Smart Chain (BSC)&lt;/strong&gt;:&lt;/p&gt;</description>
-      <content>&lt;p&gt;Membuat koin kripto Anda sendiri membutuhkan pertimbangan matang tentang berbagai aspek teknis, tujuan proyek, dan ekosistem yang ingin Anda bangun. Binance Smart Chain (BSC) dan Solana adalah dua platform blockchain yang populer untuk membuat koin kripto, tetapi masing-masing memiliki kelebihan dan kekurangan tergantung pada kebutuhan Anda.&lt;/p&gt;
-&lt;p&gt;Berikut adalah beberapa faktor yang perlu dipertimbangkan untuk memilih antara Binance Smart Chain (BSC) dan Solana:&lt;/p&gt;
-&lt;h3 id=&#34;1-kecepatan-dan-biaya-transaksi&#34;&gt;1. &lt;strong&gt;Kecepatan dan Biaya Transaksi&lt;/strong&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Binance Smart Chain (BSC)&lt;/strong&gt;:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Kecepatan transaksi di BSC cukup cepat, dengan biaya transaksi yang relatif rendah dibandingkan dengan Ethereum. BSC memiliki waktu konfirmasi blok sekitar 3 detik.&lt;/li&gt;
-&lt;li&gt;Biaya transaksi sangat terjangkau, membuatnya menjadi pilihan yang baik untuk aplikasi DeFi (Decentralized Finance) dan proyek yang memerlukan banyak transaksi kecil.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Solana&lt;/strong&gt;:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Solana menawarkan kecepatan transaksi yang sangat tinggi, dengan kapasitas pemrosesan mencapai lebih dari 65.000 transaksi per detik (TPS).&lt;/li&gt;
-&lt;li&gt;Biaya transaksi di Solana sangat rendah, hampir sebanding dengan BSC, menjadikannya sangat menarik bagi proyek yang membutuhkan kecepatan tinggi dan biaya rendah.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Rekomendasi&lt;/strong&gt;: Jika kecepatan dan biaya transaksi rendah menjadi prioritas utama, &lt;strong&gt;Solana&lt;/strong&gt; bisa menjadi pilihan yang lebih baik, terutama untuk aplikasi yang membutuhkan skalabilitas tinggi.&lt;/p&gt;
-&lt;h3 id=&#34;2-kompatibilitas-dan-ekosistem&#34;&gt;2. &lt;strong&gt;Kompatibilitas dan Ekosistem&lt;/strong&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Binance Smart Chain (BSC)&lt;/strong&gt;:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;BSC kompatibel dengan Ethereum Virtual Machine (EVM), yang berarti Anda bisa menggunakan alat dan infrastruktur yang sama dengan Ethereum, seperti MetaMask dan berbagai kontrak pintar yang sudah ada.&lt;/li&gt;
-&lt;li&gt;BSC memiliki ekosistem yang besar, terutama di sektor DeFi dan NFT. Jika Anda ingin membuat token yang mudah diintegrasikan ke dalam aplikasi DeFi atau marketplace NFT, BSC adalah pilihan yang solid.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Solana&lt;/strong&gt;:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Solana memiliki ekosistem yang berkembang, tetapi lebih fokus pada aplikasi dengan performa tinggi dan kecepatan tinggi seperti decentralized apps (dApps), game blockchain, dan solusi keuangan.&lt;/li&gt;
-&lt;li&gt;Solana tidak kompatibel langsung dengan EVM, jadi Anda harus belajar dan menggunakan bahasa pemrograman khusus Solana, seperti Rust atau C, untuk menulis kontrak pintar.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Rekomendasi&lt;/strong&gt;: Jika Anda sudah familiar dengan Ethereum dan ingin memanfaatkan alat yang ada, &lt;strong&gt;BSC&lt;/strong&gt; lebih mudah diakses. Jika Anda berfokus pada aplikasi performa tinggi dengan skalabilitas besar, &lt;strong&gt;Solana&lt;/strong&gt; adalah pilihan yang lebih baik.&lt;/p&gt;
-&lt;h3 id=&#34;3-keamanan-dan-desentralisasi&#34;&gt;3. &lt;strong&gt;Keamanan dan Desentralisasi&lt;/strong&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Binance Smart Chain (BSC)&lt;/strong&gt;:
-&lt;ul&gt;
-&lt;li&gt;BSC menggunakan model konsensus &lt;strong&gt;Proof of Staked Authority (PoSA)&lt;/strong&gt;, yang lebih terpusat dibandingkan dengan Ethereum atau Solana. Ada 21 validator yang bertugas memvalidasi transaksi, yang berarti sedikit lebih terpusat dan mungkin memiliki risiko serangan lebih tinggi dalam kasus konsensus yang lebih terpusat.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Solana&lt;/strong&gt;:
-&lt;ul&gt;
-&lt;li&gt;Solana menggunakan &lt;strong&gt;Proof of History (PoH)&lt;/strong&gt; bersama dengan &lt;strong&gt;Proof of Stake (PoS)&lt;/strong&gt;, yang memungkinkan kecepatan transaksi tinggi dengan tetap menjaga desentralisasi lebih baik dibandingkan BSC.&lt;/li&gt;
-&lt;li&gt;Meskipun begitu, Solana pernah mengalami beberapa insiden downtime, yang menunjukkan adanya tantangan dalam hal keamanan dan stabilitas jaringan dalam kondisi tertentu.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Rekomendasi&lt;/strong&gt;: Jika desentralisasi lebih penting bagi Anda, &lt;strong&gt;Solana&lt;/strong&gt; cenderung lebih desentralisasi daripada BSC. Namun, perlu diperhatikan juga bahwa Solana pernah mengalami downtime, meskipun dalam jangka panjang mereka berusaha memperbaiki stabilitas jaringan.&lt;/p&gt;
-&lt;h3 id=&#34;4-skalabilitas-dan-pertumbuhan&#34;&gt;4. &lt;strong&gt;Skalabilitas dan Pertumbuhan&lt;/strong&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Binance Smart Chain (BSC)&lt;/strong&gt;:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;BSC menawarkan skalabilitas yang cukup baik dengan waktu konfirmasi yang cepat dan biaya rendah, tetapi jika ada banyak aplikasi besar yang berjalan di BSC, kadang-kadang jaringan bisa menjadi lebih padat.&lt;/li&gt;
-&lt;li&gt;BSC telah ada sejak 2020 dan memiliki komunitas besar, tetapi ketergantungan pada Binance dapat menjadi kekhawatiran terkait sentralisasi.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Solana&lt;/strong&gt;:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Solana memiliki arsitektur yang dirancang untuk mendukung skalabilitas ekstrem, dengan tujuan menjadi blockchain yang dapat menangani jutaan transaksi per detik.&lt;/li&gt;
-&lt;li&gt;Solana terus berkembang pesat dan semakin banyak adopsi dari proyek-proyek besar, terutama di ruang NFT dan game blockchain.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Rekomendasi&lt;/strong&gt;: &lt;strong&gt;Solana&lt;/strong&gt; memiliki keunggulan dalam hal skalabilitas jika proyek Anda berkembang pesat dalam waktu singkat dan membutuhkan jaringan dengan kapasitas tinggi.&lt;/p&gt;
-&lt;h3 id=&#34;5-pemrograman-dan-pengembangan&#34;&gt;5. &lt;strong&gt;Pemrograman dan Pengembangan&lt;/strong&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Binance Smart Chain (BSC)&lt;/strong&gt;:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Jika Anda sudah terbiasa dengan Ethereum, Anda akan merasa familiar dengan BSC karena mendukung EVM dan dapat menggunakan bahasa Solidity untuk menulis kontrak pintar.&lt;/li&gt;
-&lt;li&gt;Pengembang dapat memanfaatkan banyak dokumentasi dan alat yang sudah tersedia di ekosistem Ethereum.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Solana&lt;/strong&gt;:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Pengembangan di Solana membutuhkan pembelajaran bahasa pemrograman seperti Rust atau C, yang mungkin lebih menantang jika Anda terbiasa dengan Solidity.&lt;/li&gt;
-&lt;li&gt;Meskipun Solana lebih baru, dokumentasinya semakin lengkap dan banyak pengembang tertarik untuk memanfaatkannya.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Rekomendasi&lt;/strong&gt;: Jika Anda ingin memanfaatkan ekosistem Ethereum dan menggunakan alat yang sudah ada, &lt;strong&gt;BSC&lt;/strong&gt; lebih mudah untuk dikembangkan. Jika Anda tertarik untuk bekerja dengan teknologi yang lebih inovatif, &lt;strong&gt;Solana&lt;/strong&gt; menawarkan banyak potensi tetapi memerlukan pembelajaran tambahan.&lt;/p&gt;
-&lt;h3 id=&#34;kesimpulan&#34;&gt;Kesimpulan:&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Pilih &lt;strong&gt;Binance Smart Chain (BSC)&lt;/strong&gt; jika Anda ingin membuat koin kripto dengan biaya rendah, akses mudah ke ekosistem DeFi yang besar, dan jika Anda sudah familiar dengan Ethereum.&lt;/li&gt;
-&lt;li&gt;Pilih &lt;strong&gt;Solana&lt;/strong&gt; jika Anda membutuhkan performa tinggi, skalabilitas besar, dan biaya transaksi yang sangat rendah, serta siap belajar platform yang lebih teknikal.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Keduanya adalah pilihan yang solid, tetapi pilihan terbaik tergantung pada tujuan dan kebutuhan spesifik proyek Anda.&lt;/p&gt;
-</content>
+      <description>Membuat koin kripto Anda sendiri membutuhkan pertimbangan matang tentang berbagai aspek teknis, tujuan proyek, dan ekosistem yang ingin Anda bangun. Binance Smart Chain (BSC) dan Solana adalah dua platform blockchain yang populer untuk membuat koin kripto, tetapi masing-masing memiliki kelebihan dan kekurangan tergantung pada kebutuhan Anda.&#xA;Berikut adalah beberapa faktor yang perlu dipertimbangkan untuk memilih antara Binance Smart Chain (BSC) dan Solana:&#xA;1. Kecepatan dan Biaya Transaksi Binance Smart Chain (BSC):</description>
     </item>
-    
   </channel>
 </rss>

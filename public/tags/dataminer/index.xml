@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dataminer on Blog Dimas Irgiansyah</title>
+    <link>https://blog.dimasirgiansyah.my.id/tags/dataminer/</link>
+    <description>Recent content in Dataminer on Blog Dimas Irgiansyah</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 18 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blog.dimasirgiansyah.my.id/tags/dataminer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Belajar menjadi data miner part 1</title>
+      <link>https://blog.dimasirgiansyah.my.id/posts/belajar-menjadi-data-miner-part-1/</link>
+      <pubDate>Tue, 18 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://blog.dimasirgiansyah.my.id/posts/belajar-menjadi-data-miner-part-1/</guid>
+      <description>Oke, kita mulai dari dasar dulu!&#xA;Pelajaran 1: Pengantar Data Mining 1️⃣ Apa Itu Data Mining? Data mining adalah proses menemukan pola, tren, atau informasi berharga dari kumpulan data besar menggunakan teknik statistik, machine learning, dan analisis data.&#xA;2️⃣ Kenapa Data Mining Penting? Data mining digunakan di berbagai bidang, misalnya:&#xA;Bisnis → Menganalisis kebiasaan pelanggan untuk meningkatkan penjualan. Keuangan → Mendeteksi transaksi mencurigakan untuk mencegah penipuan. Keamanan Siber → Menganalisis log sistem untuk menemukan aktivitas mencurigakan.</description>
+    </item>
+  </channel>
+</rss>

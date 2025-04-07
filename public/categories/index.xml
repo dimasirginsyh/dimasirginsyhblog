@@ -4,7 +4,8 @@
     <title>Categories on Blog Dimas Irgiansyah</title>
     <link>https://blog.dimasirgiansyah.my.id/categories/</link>
     <description>Recent content in Categories on Blog Dimas Irgiansyah</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://blog.dimasirgiansyah.my.id/categories/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://blog.dimasirgiansyah.my.id/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

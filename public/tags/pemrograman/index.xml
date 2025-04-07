@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pemrograman on Blog Dimas Irgiansyah</title>
+    <link>https://blog.dimasirgiansyah.my.id/tags/pemrograman/</link>
+    <description>Recent content in Pemrograman on Blog Dimas Irgiansyah</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 07 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blog.dimasirgiansyah.my.id/tags/pemrograman/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cheatsheet Python untuk Developer Modern</title>
+      <link>https://blog.dimasirgiansyah.my.id/posts/cheatsheet-python-untuk-developer-mode/</link>
+      <pubDate>Mon, 07 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://blog.dimasirgiansyah.my.id/posts/cheatsheet-python-untuk-developer-mode/</guid>
+      <description>Kuasai Python dengan Cepat: Cheatsheet Praktis Cheatsheet ini memberikan ringkasan sintaks dan konsep penting dalam Python, cocok untuk pemula maupun yang ingin menyegarkan ingatan. Kita akan membahas tipe data, struktur kontrol, fungsi, dan sedikit tips praktis.&#xA;Mengenal Python: Bahasa Serbaguna Python merupakan bahasa pemrograman tingkat tinggi yang populer karena sintaksnya yang mudah dibaca dan fleksibilitasnya. Python digunakan luas dalam berbagai bidang, mulai dari pengembangan web, data science, machine learning, hingga scripting.</description>
+    </item>
+  </channel>
+</rss>
